@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>网易严选</title>
+    </head>
+    <link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=gold" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/hotSell.css">
+    <style>
+        
+    </style>
+    <body>
+    <!--登录遮罩及登录主体结构-->
+        <div class="rlc" id="rlc">
+            <div class="rlc_main">
+                <h3>网易登录</h3>
+                <span class="rlc_close" id="rlc_close">x</span>
+                <form action="">
+                    <p>账号：<input type="text" name="username" id="username"></p>
+                    <p>密码：<input type="password" name="password" id="password"></p>
+                    <p><input type="submit" value="登录" class="login"></p>
+                </form>
+                <div class="rlc_main_root">
+                    <a href=""><span class="weChat"></span></a>
+                    <a href=""><span class="QQ"></span></a>
+                    <a href=""><span class="weibo"></span></a>
+                    <a href=""><span class="wangyi"></span></a>
+                    <a href="" class="userQuestion">遇到问题？</a>
+                </div>
+            </div>
+        </div>
+    <!--头结构-->
+        <div class="header">
+            <div class="top_nav">
+                <div class="type_page clearfix">
+                    <div class="top_nav_left">
+                        <a href=""><img src="https://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif" alt="">
+                            用浦发借记卡【满100立减20元】可叠加其他优惠
+                        </a>
+                    </div>
+                    <div class="top_nav_right">
+                        <a href="javascript:;" id="rlb">登录/注册</a>
+                        <span>|</span>
+                        <a href="">我的订单</a>
+                        <span>|</span>
+                        <a href="">会员</a>
+                        <span>|</span>
+                        <a href="">甄选家</a>
+                        <span>|</span>
+                        <a href="">企业采购</a>
+                        <span>|</span>
+                        <a href="">客户服务</a>
+                        <span>|</span>
+                        <a href="">APP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head_main">
+                <div class="type_page clearfix">
+                    <div class="logo"><img src="images/logo.png" alt=""></div>
+                    <div class="shopping_car">
+                        <a href="">
+                            <span class="glyphicon glyphicon-shopping-cart"></span><span>购物车</span>
+                            <span class="shopping_number"><span class="shopping_number">0</span></span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="search_box clearfix">
+                            <span class="search_icon"></span>
+                            <input type="text" name="" placeholder="爆款 全棉质条纹4件套"><button>搜索</button>
+                        </div>
+                        <div class="search_hotwords">
+                            <ul class="clearfix">
+                                <li><a href="" class="search_hotwords_active">轻弹云朵拖鞋9.9元</a></li>
+                                <span>|</span>
+                                <li><a href="">中秋月饼上新热卖</a></li>
+                                <span>|</span>
+                                <li><a href="">新上乳胶床品</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_nav">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li class="speical"><a href="">首页</a></li>
+                        <li><a href="">居家生活</a></li>
+                        <li><a href="">服饰鞋包</a></li>
+                        <li><a href="">美食酒水</a></li>
+                        <li><a href="">个护清洁</a></li>
+                        <li><a href="">母婴亲子</a></li>
+                        <li><a href="">运动旅游</a></li>
+                        <li><a href="">数码家电</a></li>
+                        <li><a href="">全球特色</a></li>
+                        <li><a href="">为你严选</a></li>
+                        <li class="special2"><a href="">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--隐藏头结构-->
+        <div class="header2" id="header2">
+            <div class="type_page">
+                <div class="header2_nav">
+                    <div class="type_page clearfix">
+                        <div class="header2_logo"></div>
+                        <div class="header2_icon">
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                        </div>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">居家生活</a></li>
+                            <li><a href="">服饰鞋包</a></li>
+                            <li><a href="">美食酒水</a></li>
+                            <li><a href="">个护清洁</a></li>
+                            <li><a href="">母婴亲子</a></li>
+                            <li><a href="">运动旅游</a></li>
+                            <li><a href="">数码家电</a></li>
+                            <li class="header2_special"><a href="">全球特色</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--侧边栏结构-->
+        <div class="side_bar" id="side_bar">
+            <ul>
+                <li class="side_bar_title">
+                    - 热销榜 -
+                </li>
+                <li><a href="" class="side_bar_first"><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png" alt="" width="30">全站<br>热销榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png" alt="" width="30">居家<br>生活榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/2318b65e996e14bc0707880040dfabb0.png" alt="" width="30">服饰<br>鞋包榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/8ca4557361e2fff394a5a94d0b73f3c6.png" alt="" width="30">美食<br>酒水榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/270bc2465ac7eed90ada40c92166678b.png" alt="" width="30">数码<br>家电榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/4723267aef758a7d805bb7c1447fdc44.png" alt="" width="30">个护<br>清洁榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/eec3af53eb17a4b117043e18ae7c7418.png" alt="" width="30">运动<br>旅游榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/a94b2f7f7ada813ae9c93f84d3d60d6f.png" alt="" width="30">母婴<br>亲子榜</a></li>
+                <li><a href="" class="none_bd"><img src="https://yanxuan.nosdn.127.net/9cb33f543dddd54c7cc157d29650dbf4.png" alt="" width="30">全球<br>特色榜</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="hotSell"> 
+            <div class="type_page">
+                <!-- header            -->
+                <div class="hotSellheader">
+                    <div class="hotSellheader_bg">
+                        <div class="hotSellheader_font">
+                            <div class="title">热销榜单－美食酒水篇</div>
+                            <div class="content">本排名按严选官方实时数据计算得出，榜单所覆盖均为在售商品。每1小时更新1次</div>
+                        </div>
+                        <img src="https://yanxuan.nosdn.127.net/c365385884347d90523e8072b17ef4ec.png?imageView&quality=95&thumbnail=1090x270" width="100%" alt="">
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li class="active"><a href="#">全部</a></li>
+                            <li><a href="#">居家生活</a></li>
+                            <li><a href="#">服饰鞋包</a></li>
+                            <li><a href="#">美食酒水</a></li>
+                            <li><a href="#">个护清洁</a></li>
+                            <li><a href="#">母婴亲子</a></li>
+                            <li><a href="#">运动旅行</a></li>
+                            <li><a href="#">数码家电</a></li>
+                            <li><a href="#">全球特色</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- main -->
+                <div class="main">
+                    <div class="otherItem clearfix">
+                        <ul>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="https://yanxuan-item.nosdn.127.net/1979054e3a1c8409f10191242165e674.png?imageView&quality=95&thumbnail=245x245" alt="">
+                                        </div>
+                                        <i class="toplist top">
+                                            <div class="f-fz16">TOP</div>
+                                            <div class="count">01</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">常温纯牛奶 250毫升*12盒*2提</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span><span style="color:#D4282D">【每满1件领取赠品】</span></span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main2.png" alt="">
+                                        </div>
+                                        <i class="toplist top">
+                                            <div class="f-fz16">TOP</div>
+                                            <div class="count">02</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>特价</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">汐月 月饼礼盒 60克*8枚</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥158</span>
+                                        <span class="ita">￥198</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="images/ban2.png" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">真的佩服严选的包装，旅途遥远，想的很周到，外包装一点没有磨损，月饼也精美！</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                            <div class="itemimg">
+                                                <img class="scale" src="images/main3.png" alt="">
+                                            </div>
+                                        <i class="toplist top">
+                                            <div class="f-fz16">TOP</div>
+                                            <div class="count">03</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+
+                                    </div>
+                                    <h4>
+                                        <a href="#">全价猫粮 1.8千克*1袋</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥88</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <i class="icon-sound"></i>
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">04</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="https://yanxuan-item.nosdn.127.net/fe2a5ba875d3785b1d0b46ad4e85fbf0.png?imageView&quality=95&thumbnail=245x245" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">05</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="https://yanxuan-item.nosdn.127.net/16da3a3e056b5cc7a37b520801a449d6.png?imageView&quality=95&thumbnail=245x245" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">06</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">大闸蟹礼券（券面价388元）</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="https://yanxuan-item.nosdn.127.net/3f653f853f459db47a51b5684ade6fc5.png?imageView&quality=95&thumbnail=245x245" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">07</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">女式极简牛皮桶包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="https://yanxuan-item.nosdn.127.net/b532f2f441572242333f6c5b92fc9f10.png?imageView&quality=95&thumbnail=245x245" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">08</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">浓缩即食燕窝 70克*3瓶 99%</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">09</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">10</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">11</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">12</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">13</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">14</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">15</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="itempic">
+                                    <a href="#">
+                                        <div class="itemimg">
+                                            <img class="scale" src="images/main1.png" alt="">
+                                        </div>
+                                        <i class="toplist">
+                                            <div class="count">16</div>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="title">
+                                    <div class="splic">
+                                        <span>满减</span>
+                                    </div>
+                                    <h4>
+                                        <a href="#">超薄婴儿纸尿裤 S码（38片）*1包</a>
+                                    </h4>
+                                    <div class="money">
+                                        <span>￥69</span>
+                                        <a href="#"><i class="cart-2"></i></a>
+                                    </div>
+                                    <div class="comment">
+                                        <hr>
+                                        <div class="manPic">
+                                            <img src="https://yanxuan.nosdn.127.net/d3aba01fde61fdd6cef1baa58ee8e605.jpg?imageView&quality=95&thumbnail=36y36" alt="">
+                                            </div>
+                                        <div class="content">
+                                            <a href="#">该商品正在参加<span style="color:#D4282D">【每满1件领取赠品】</span>活动，立即参与</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+            <div class="hotSellfoot">
+                <div class="type_page">
+                    <div class="hr"></div>
+                    <div class="title">
+                        <i class="icon-ranks"></i>
+                        <span>更多分类热销榜单</span>
+                    </div>
+                    <ul class="clearfix">
+                        <li style="background: url(./images/life_bg.png);">
+                            <a href="hotSell_lifeinhome.html" target="_blank">
+                                <div class="nav">
+                                    居家生活榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/b4949f469d564ab34e69ebc45a6233ec.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/box_bg.png);">
+                            <a href="hotSell_clothes.html" target="_blank">
+                                <div class="nav">
+                                    服饰鞋包榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/ce4e606b4ddd2edebf57f63b56256813.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/food_bg.png);">
+                            <a href="hotSell_foot.html" target="_blank">
+                                <div class="nav">
+                                    美食酒水榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/9dd811d3b258d9a1ef6a84254a0da18e.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/clear_bg.png);">
+                            <a href="hotSell_clean.html" target="_blank">
+                                <div class="nav">
+                                    个护清洁榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/8f3798ffdabcacb525bc5dfa88bd4b4e.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/baby_bg.png);">
+                            <a href="hotSell_babygoods.html" target="_blank">
+                                <div class="nav">
+                                    母婴亲子榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/2f0620f2f41555d24b2645d4bcff451e.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/sport_bg.png);">
+                            <a href="hotSell_sports.html" target="_blank">
+                                <div class="nav">
+                                    运动旅行榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/17c904bff54e6e550c6d24632e1acd8d.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/digital_bg.png);">
+                            <a href="hotSell_Electroniproduct.html" target="_blank">
+                                <div class="nav">
+                                    数码家电榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/aa1ec3b84c88e959df8dcc4588d002ed.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                        <li style="background: url(./images/world_bg.png);">
+                            <a href="hotSell.html" target="_blank">
+                                <div class="nav">
+                                    全球特色榜
+                                </div>
+                                <div class="heng"></div>
+                                <div class="img">
+                                    <img src="https://yanxuan.nosdn.127.net/6f3c97245dde19b9017a04045128ca7e.png?imageView&quality=95&thumbnail=230x230" alt="">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    <!--底部结构-->
+        <div class="root">
+            <div class="root1">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li>
+                            <div class="root1_title">客户服务</div>
+                            <div class="root1_content1">
+                                <div class="clearfix">
+                                    <div>
+                                        <div class="online_server"></div>
+                                        在线客服
+                                    </div>
+                                    <div>
+                                        <div class="user_feedback"></div>
+                                        用户反馈
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="root1_bd">
+                            <div class="root1_title">何为严选</div>
+                            <p class="root1_content2">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                            <div class="connectus">
+                                关注我们：<span></span><span></span><span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="root1_title">扫码下载严选APP</div>
+                            <img src="images/app.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="root2">
+                <div class="type_page">
+                    <ul class="root2_title clearfix">
+                        <li><span></span>网易自营电商</li>
+                        <li><span></span>30天无忧退换货</li>
+                        <li><span></span>满88元免邮费</li>
+                        <li><span></span>品质保证</li>
+                    </ul>
+                    <div class="root2_content">
+                        <div class="root_nav">
+                            <a href="">关于我们</a>
+                            <span>|</span>
+                            <a href="">帮助中心</a>
+                            <span>|</span>
+                            <a href="">售后服务</a>
+                            <span>|</span>
+                            <a href="">配送与验收</a>
+                            <span>|</span>
+                            <a href="">商务合作</a>
+                            <span>|</span>
+                            <a href="">企业采购</a>
+                            <span>|</span>
+                            <a href="">开放平台</a>
+                            <span>|</span>
+                            <a href="">搜索推荐</a>
+                            <span>|</span>
+                            <a href="">友情链接</a>
+                            <span>|</span>
+                            <a href="">廉正举报</a>
+                        </div>
+                        <p class="root2_p1">食品经营许可证：JY13301080111719出版物经营许可证：新出发滨字第0132号妙得ICP证号：ICP 证浙B2-20160106浙杭食药监械经营备20171029号营业执照网易公司版权所有 © 1997-2019</p>
+                        <p>（浙杭）网械企备字[2019]第00119号（粤）网械平台备字（2019）第00004号单用途商业预付卡备案证：330100AAC0024 <img src="images/jingwei.gif" alt="" width="23" height="25"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/common.js"></script>
+
+</html>

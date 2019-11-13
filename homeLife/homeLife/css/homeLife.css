@@ -1,0 +1,145 @@
+.homeLife{background-color: #f5f5f5;padding-bottom: 80px; }
+/*header头开始*/
+.homeLifeheader{margin-bottom: 30px;}
+.homeLifeheader .list-nav{font-size: 12px;padding: 20px 0;}
+.homeLifeheader .list-nav a:hover{text-decoration: underline;}
+.homeLifeheader .list-nav span{color:#999;}
+.homeLifeheader .list-nav .greater{display: inline-block;width: 5px;height: 11px;background: url(../images/fuhao.png);background-position: 0 -1093px;margin: 0 5px;}
+.homeLifeheader_bg{position: relative;}
+.homeLifeheader_bg ul{position: absolute;bottom: 4px;width: 100%;text-align: center;font-size: 12px;}
+.homeLifeheader_bg ul li{display: inline-block;position: relative;cursor: pointer;width: 8px;height: 8px;margin: 0 8px 10px;cursor: pointer;}
+.homeLifeheader_bg ul li button{display: block;width: 8px;height: 8px;border-radius: 500px;border:1px solid #cecece;background: #fff;outline: 0;cursor: pointer;color: transparent;}
+.homeLifeheader_bg ul li button.on{width: 9px;height: 9px;box-shadow: 0 0 0 4px #dfcead;background: #a7936e;border:none;}/*header头结束*/
+/*main内容开始*/
+.homeLifemain{
+	padding: 0 40px;
+	background: #fff;
+}
+.homeLifemain .nav{
+	font-size: 14px;
+	margin-top: -1px;
+	border-bottom: 1px solid #dedede;
+}
+.homeLifemain .nav .class{
+	padding-top: 20px;
+	border-top: 1px dashed #dedede;
+	overflow: hidden;
+}
+.homeLifemain .nav .name{
+	float: left;
+	color: #999;
+	margin-right: 28px;
+	overflow: hidden;
+}
+.homeLifemain .nav .classlist{
+	float: left;
+	width: 930px;
+	overflow: hidden;
+}
+.homeLifemain .nav .classlist a{
+	float: left;
+	margin: 0 30px 16px 0; 
+}
+.homeLifemain .nav .classlist a:hover{
+	color: #B4A078;
+}
+.homeLifemain .nav .classlist a .icon-arrow{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+
+
+
+
+.homeLifemain .otherItem{
+	padding-top: 30px;
+	background: #fff;
+	margin-right: -10px;
+}
+.homeLifemain .otherItem .hd{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.homeLifemain .otherItem .hd .title{
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 44px;
+}
+.homeLifemain .otherItem .hd p span{
+	font-size: 14px;
+	color: #999;
+}
+.homeLifemain .otherItem li.item{text-align: center;width: 245px;height: 381px;float: left;margin: 0 10px 30px 0;}
+.homeLifemain .otherItem li.item:hover{background: #F4F0EA;box-shadow:2px 2px 2px 1px #dedede;}
+.homeLifemain .otherItem .itempic{margin-bottom: 8px;background-color: #f4f4f4;position: relative;}
+.homeLifemain .otherItem .itempic .toplist{font-style: normal;display: inline-block;position: absolute;width: 50px;height: 49px;background:url(../images/icon.png);background-position: 0 -317px;top: -3px;left:10px;color: #fff;line-height: 49px;}
+.homeLifemain .otherItem .itempic .top{background-position: 0 -1588px;line-height: 22px;}
+.homeLifemain .otherItem .itempic .toplist div{margin-left: -5px;}
+.homeLifemain .otherItem .itempic .toplist .count{font-family: "Microsoft Yahei","微软雅黑";font-size: 22px;}
+.homeLifemain .otherItem li.item .scale{transition: all 2s;}
+.homeLifemain .otherItem li.item .itemimg{width: 245px;height: 245px;overflow: hidden;}
+.homeLifemain .otherItem .title .splic{height: 20px;margin: 0 auto 3px;}
+.homeLifemain .otherItem .title .splic span{display: inline-block;height: 20px;line-height: 20px;color: #fff;padding: 0 5px;font-size: 12px;background-color:#e36844;}
+.homeLifemain .otherItem .title h4{font-size: 13px;padding: 0 10px;margin-bottom: 4px;height: 20px;line-height: 20px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.homeLifemain .otherItem .title h4 a:hover{color: #B4A078;}
+.homeLifemain .otherItem .money span{color: #d4282d;font-size:13px;}
+.homeLifemain .otherItem .money .ita{text-decoration: line-through;color: #999;}
+.homeLifemain .otherItem .comment hr{display: block;margin: 6px auto 14px;padding: 0;border:0;width: 130px;height: 1px;border-top: 1px solid #e8e8e8;}
+.homeLifemain .otherItem .content{font-size: 13px;line-height: 18px;overflow: hidden;text-overflow: ellipsis;text-align: center;}
+.homeLifemain .otherItem .content a{color: #999;}
+.homeLifemain .otherItem .content a:hover{color:#B4A078;}
+/*main内容结束*/
+/*icon*/
+.icon{
+
+}
+.icon-uparrow{
+	display: block;
+	background: url(../images/arrow.png);
+	background-position: 0 -1181px;
+    height: 5px;
+    width: 10px;
+    margin-bottom: 2px;
+}
+.icon-downarrow{
+	display: block;
+	background: url(../images/arrow.png);
+    background-position: 0 -673px;
+    height: 5px;
+    width: 10px;
+}
+.icon-longdownarrow{
+	display: inline-block;
+	background: url(../images/arrow.png);
+    background-position: 0 -651px;
+    height: 12px;
+    width: 9px;
+    margin-left: 9px;
+
+}
+/*icon*/
+.f-fz16{
+	font-size: 16px;
+}
+.ita{
+	text-decoration: line-through;
+	color: #999 !important;
+}
+.active{
+	color:#b4a078;
+}
+.mag-r{
+	margin-right: 0 !important;
+}
+.bor-top0{
+	border-top: none !important;
+}
+.f-fz16{
+	font-size: 16px;
+}
+.ita{
+	text-decoration: line-through;
+	color: #999 !important;
+}

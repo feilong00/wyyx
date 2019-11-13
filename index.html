@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>网易严选</title>
+    </head>
+    <link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=gold" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    </style>
+    <body>
+    <!--登录遮罩及登录主体结构-->
+        <div class="rlc" id="rlc">
+            <div class="rlc_main">
+                <h3>网易登录</h3>
+                <span class="rlc_close" id="rlc_close">x</span>
+                <form action="">
+                    <p>账号：<input type="text" name="username" id="username"></p>
+                    <p>密码：<input type="password" name="password" id="password"></p>
+                    <p><input type="submit" value="登录" class="login"></p>
+                </form>
+                <div class="rlc_main_root">
+                    <a href=""><span class="weChat"></span></a>
+                    <a href=""><span class="QQ"></span></a>
+                    <a href=""><span class="weibo"></span></a>
+                    <a href=""><span class="wangyi"></span></a>
+                    <a href="" class="userQuestion">遇到问题？</a>
+                </div>
+            </div>
+        </div>
+    <!--头结构-->
+        <div class="header">
+            <div class="top_nav">
+                <div class="type_page clearfix">
+                    <div class="top_nav_left">
+                        <a href=""><img src="https://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif" alt="">
+                            用浦发借记卡【满100立减20元】可叠加其他优惠
+                        </a>
+                    </div>
+                    <div class="top_nav_right">
+                        <a href="javascript:;" id="rlb">登录/注册</a>
+                        <span>|</span>
+                        <a href="">我的订单</a>
+                        <span>|</span>
+                        <a href="">会员</a>
+                        <span>|</span>
+                        <a href="">甄选家</a>
+                        <span>|</span>
+                        <a href="">企业采购</a>
+                        <span>|</span>
+                        <a href="">客户服务</a>
+                        <span>|</span>
+                        <a href="">APP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head_main">
+                <div class="type_page clearfix">
+                    <div class="logo"><img src="images/logo.png" alt=""></div>
+                    <div class="shopping_car">
+                        <a href="">
+                            <span>购物车</span>
+                            <span class="shopping_number"><span class="shopping_number">0</span></span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="search_box clearfix">
+                            <span class="search_icon"></span>
+                            <input type="text" name="" placeholder="爆款 全棉质条纹4件套"><button>搜索</button>
+                        </div>
+                        <div class="search_hotwords">
+                            <ul class="clearfix">
+                                <li><a href="" class="search_hotwords_active">轻弹云朵拖鞋9.9元</a></li>
+                                <span>|</span>
+                                <li><a href="">中秋月饼上新热卖</a></li>
+                                <span>|</span>
+                                <li><a href="">新上乳胶床品</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_nav">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li class="speical"><a href="">首页</a></li>
+                        <li><a href="sort_homelife.html" target="_blank">居家生活</a></li>
+                        <li><a href="sort_clothes.html" target="_blank">服饰鞋包</a></li>
+                        <li><a href="sort_foot.html" target="_blank">美食酒水</a></li>
+                        <li><a href="sort_clean.html" target="_blank">个护清洁</a></li>
+                        <li><a href="sort_babygoods.html" target="_blank">母婴亲子</a></li>
+                        <li><a href="sort_sports.html" target="_blank">运动旅游</a></li>
+                        <li><a href="sort_Electroniproduct.html" target="_blank">数码家电</a></li>
+                        <li><a href="sort_worldspecial.html" target="_blank">全球特色</a></li>
+                        <li><a href="sort_recommend.html" target="_blank">为你严选</a></li>
+                        <li class="special2"><a href="sort_crowdFunding.html" target="_blank">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--隐藏头结构-->
+        <div class="header2" id="header2">
+            <div class="type_page">
+                <div class="header2_nav">
+                    <div class="type_page clearfix">
+                        <div class="header2_logo"></div>
+                        <div class="header2_icon">
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                        </div>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="sort_homelife.html" target="_blank">居家生活</a></li>
+                            <li><a href="sort_clothes.html" target="_blank">服饰鞋包</a></li>
+                            <li><a href="sort_foot.html" target="_blank">美食酒水</a></li>
+                            <li><a href="sort_clean.html" target="_blank">个护清洁</a></li>
+                            <li><a href="sort_babygoods.html" target="_blank">母婴亲子</a></li>
+                            <li><a href="sort_sports.html" target="_blank">运动旅游</a></li>
+                            <li><a href="sort_Electroniproduct.html" target="_blank">数码家电</a></li>
+                            <li class="header2_special"><a href="sort_worldspecial.html" target="_blank">全球特色</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--侧边栏结构-->
+        <div class="side_bar" id="side_bar">
+            <ul>
+                <li class="side_bar_title">
+                    - 热销榜 -
+                </li>
+                <li><a href="hotSell.html" class="side_bar_first" target="_blank"><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png" alt="" width="30">全站<br>热销榜</a></li>
+                <li><a href="hotSell_lifeinhome.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png" alt="" width="30">居家<br>生活榜</a></li>
+                <li><a href="hotSell_clothes.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/2318b65e996e14bc0707880040dfabb0.png" alt="" width="30">服饰<br>鞋包榜</a></li>
+                <li><a href="hotSell_foot.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/8ca4557361e2fff394a5a94d0b73f3c6.png" alt="" width="30">美食<br>酒水榜</a></li>
+                <li><a href="hotSell_Electroniproduct.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/270bc2465ac7eed90ada40c92166678b.png" alt="" width="30">数码<br>家电榜</a></li>
+                <li><a href="hotSell_clean.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/4723267aef758a7d805bb7c1447fdc44.png" alt="" width="30">个护<br>清洁榜</a></li>
+                <li><a href="hotSell_sports.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/eec3af53eb17a4b117043e18ae7c7418.png" alt="" width="30">运动<br>旅游榜</a></li>
+                <li><a href="hotSell_babygoods.html" target="_blank"><img src="https://yanxuan.nosdn.127.net/a94b2f7f7ada813ae9c93f84d3d60d6f.png" alt="" width="30">母婴<br>亲子榜</a></li>
+                <li><a href="hotSell_worldspeical.html" class="none_bd" target="_blank"><img src="https://yanxuan.nosdn.127.net/9cb33f543dddd54c7cc157d29650dbf4.png" alt="" width="30">全球<br>特色榜</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <!-- banner开始 -->
+            <div class="banner">
+                <div class="layui-carousel" id="test1">
+                    <div carousel-item>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/f27863ddfa72999a2ce467f477ff851a.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/3729a2c1740cb881509ab8445d6a10da.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/c6eb64628d7962c463d0623ea990fe10.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/4e8b00f2b5fffe617c325fcf5ec8e098.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/c4ba2429b8f6b9440c50a0939da15399.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/7841ec54134842e564301665996e43c5.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/d6db8164e0fd4297b1ba1e6e2af75564.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                        <div><a href=""><img src="https://yanxuan.nosdn.127.net/c6642dd6d0a95ea026cfa1a1c81b50a6.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                    </div>
+                </div>
+            </div>
+    <!-- banner结束 -->
+
+    <!--品牌制作商开始-->
+    <div class="manufacturer type-page">
+        <div class="commonTitle">
+            <h2>品牌制造商</h2>
+            <span>工厂直达消费者，剔除品牌溢价</span>
+            <a href="more_brand.html" class="more" target="_blank">更多制造商&gt;</a>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <a href="#">
+                    <h2><em>海外制造 <span>上新</span></em> </h2>
+                    <span class="money">9.9元起</span>
+                    <div class="menu-img"><img src="./images/manufacturer1.png" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2><em>CK制造商 </em> </h2>
+                    <span class="money">29.9元起</span>
+                    <div class="menu-img"><img src="./images/manufacturer2.png" alt=""></div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item">
+                    <h2><em>新秀丽制造商</em></h2>
+                    <span class="money">159元起</span>
+                    <div class="menu-img"><img src="./images/manufacturer3.png" alt=""></div>
+                </a>
+                <a href="#" class="item ">
+                    <h2><em>新秀丽制造商</em></h2>
+                    <span class="money">159元起</span>
+                    <div class="menu-img"><img src="./images/manufacturer4.png" alt=""></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--品牌制作商结束-->
+
+    <!-- 新品首发开始 -->
+    <div class="newProduct type-page">
+        <div class="commonTitle">
+            <h2>新品首发</h2>
+            <span>工厂直达消费者，剔除品牌溢价</span>
+            <a href="more_newproduct.html" class="more" target="_blank">更多制造商&gt;</a>
+        </div>
+        <ul class="clearfix">
+               <li>
+                    
+                    <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                    <div class="detail">
+                             <span class="act">满赠</span>
+                        <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                        <p class="money">￥269</p>
+                    </div>
+               </li>
+               <li>
+                    
+                    <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                    <div class="detail">
+                             <span class="act">满赠</span>
+                        <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                        <p class="money">￥269</p>
+                    </div>
+               </li>
+               <li>
+                    
+                    <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                    <div class="detail">
+                             <span class="act">满赠</span>
+                        <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                        <p class="money">￥269</p>
+                    </div>
+               </li>
+               <li>
+                    
+                    <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                    <div class="detail">
+                             <span class="act">满赠</span>
+                        <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                        <p class="money">￥269</p>
+                    </div>
+               </li>
+        </ul>
+        <button type="" class="turnbtn turnbtn-left">&lt;</button>
+        <button type="" class="turnbtn turnbtn-right">&gt;</button>
+    </div>
+    <!-- 新品首发结束 -->
+
+    <!-- 人气推荐开始 -->
+    <div class="popularCom ">
+        <div class="type-page">
+            <div class="commonTitle">
+            <h2>人气推荐</h2>
+            <ul class="navl clearfix">
+                <li class="li-on">编辑推荐</li>
+                <li>销量总版</li>
+            </ul>
+            <a href="more_sentiment.html" class="more" target="_blank">更多制造商&gt;</a>
+            </div>
+            <div class="showBox">
+                <div class="main-product">
+                    <a href="#">
+                        <img src="./images/popularComm.png" alt="">
+                    </a>
+                    <div class="detail">
+                         <span class="act">满赠</span>
+                         <span class="act">满赠</span>
+                        <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                        <p class="money">￥269</p>
+                    </div>
+                </div>
+                <div class="menu-product">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/popularCom1.png" alt="">
+                            </a>
+                            <div class="detail min">
+                                 <span class="act">好货内部价</span>
+                                 <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269 <span class="old">¥1299</span></p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 人气推荐结束 -->
+
+    <!-- 限时购开始 -->
+    <div class="flashSale type-page">
+        <div class="type-page">
+             <div class="commonTitle">
+                <h2>限时购</h2>
+                <a href="more_timebuy.html" class="more" target="_blank">更多抢购&gt;</a>
+            </div>
+        </div>
+        <div class="showBox clearfix">
+     
+                <div class="time-img">
+                        <a href="#">
+                            <h2>18点场</h2>
+                            <p>距离结束还剩下</p>
+                            <div>
+                                <span class="time">02</span>
+                                <span class="time-line">:</span>
+                                <span class="time">12</span>
+                                <span class="time-line">:</span>
+                                <span class="time">23</span>
+                            </div>
+                            <span class="btn">
+                                查看全部&gt;
+                            </span>
+                        </a>   
+                </div>
+
+                <div class="list">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="list-img">
+                                <img src="./images/flashSale1.png" alt="" class="hover-img">
+                            </div>
+                            <div class="list-detail">
+                                <h3>小女同素色T恤衫 1-8岁</h3>
+                                <p>初夏亲肤打底80-130cm</p>
+                                <div class="bar">
+                                    <div class="numBar">
+                                        <div class="numBarIn">
+                                            
+                                        </div>
+                                    </div>
+                                    <span class="num">还剩114件</span>
+                                </div>
+                                 <div class="money">限时价<em>￥40.1</em><span class="old">￥89</span></div>
+                              <a href="#" class="btn">立即抢购</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-img">
+                                <img src="./images/flashSale1.png" alt="" class="hover-img">
+                            </div>
+                            <div class="list-detail">
+                                <h3>小女同素色T恤衫 1-8岁</h3>
+                                <p>初夏亲肤打底80-130cm</p>
+                                <div class="bar">
+                                    <div class="numBar">
+                                        <div class="numBarIn">
+                                            
+                                        </div>
+                                    </div>
+                                    <span class="num">还剩114件</span>
+                                </div>
+                                 <div class="money">限时价<em>￥40.1</em><span class="old">￥89</span></div>
+                              <a href="#" class="btn">立即抢购</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-img">
+                                <img src="./images/flashSale1.png" alt="" class="hover-img">
+                            </div>
+                            <div class="list-detail">
+                                <h3>小女同素色T恤衫 1-8岁</h3>
+                                <p>初夏亲肤打底80-130cm</p>
+                                <div class="bar">
+                                    <div class="numBar">
+                                        <div class="numBarIn">
+                                            
+                                        </div>
+                                    </div>
+                                    <span class="num">还剩114件</span>
+                                </div>
+                                 <div class="money">限时价<em>￥40.1</em><span class="old">￥89</span></div>
+                              <a href="#" class="btn">立即抢购</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-img">
+                                <img src="./images/flashSale1.png" alt="" class="hover-img">
+                            </div>
+                            <div class="list-detail">
+                                <h3>小女同素色T恤衫 1-8岁</h3>
+                                <p>初夏亲肤打底80-130cm</p>
+                                <div class="bar">
+                                    <div class="numBar">
+                                        <div class="numBarIn">
+                                            
+                                        </div>
+                                    </div>
+                                    <span class="num">还剩114件</span>
+                                </div>
+                                 <div class="money">限时价<em>￥40.1</em><span class="old">￥89</span></div>
+                              <a href="#" class="btn">立即抢购</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+    <!-- 限时购结束 -->
+
+    <!-- 福利社开始 -->
+    <div class="welfare clearfix">
+        <div class="type-page">
+             <div class="commonTitle">
+                <h2>福利社</h2>
+                <a href="more_saleCenter.html" class="more" target="_blank">更多抢购福利&gt;</a>
+            </div>
+            <div class="wheel-img">
+                <a href=""> <img src="./images/welfarem.jpg" alt=""></a>
+                <span class="btn left">
+                    &lt;
+                </span>
+                 <span class="btn right">
+                    &gt;
+                </span>
+                <ul class="slick-dot clearfix">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="discount">
+                <div class="boxhd clearfix">
+                    <h3 class="fl">今日特价</h3>
+                    <span class="fr">查看全部&gt;</span>
+                </div>
+                <ul class="clearfix">
+                    <li>
+                        <div class="list-img fl">
+                           <a href="#">
+                               <img src="./images/welfare1.png" alt="">
+                                 <span class=""><em>6</em>折</span>
+                             </a>  
+                        </div>
+                        <div class="list-detail fl">
+                            <h3>女式真丝典雅柔色衬衫</h3>
+                             <div class="money">限时价￥<em>40.1</em></div>
+                             <p class="old">￥489</p>
+                             <a href="#" class="btn">立即抢购</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-img fl">
+                           <a href="#">
+                               <img src="./images/welfare1.png" alt="">
+                                 <span class=""><em>6</em>折</span>
+                             </a>  
+                        </div>
+                        <div class="list-detail fl">
+                            <h3>女式真丝典雅柔色衬衫</h3>
+                             <div class="money">限时价￥<em>40.1</em></div>
+                             <p class="old">￥489</p>
+                             <a href="#" class="btn">立即抢购</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-img fl">
+                           <a href="#">
+                               <img src="./images/welfare1.png" alt="">
+                                 <span class=""><em>6</em>折</span>
+                             </a>  
+                        </div>
+                        <div class="list-detail fl">
+                            <h3>女式真丝典雅柔色衬衫</h3>
+                             <div class="money">限时价￥<em>40.1</em></div>
+                             <p class="old">￥489</p>
+                             <a href="#" class="btn">立即抢购</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-img fl">
+                           <a href="#">
+                               <img src="./images/welfare1.png" alt="">
+                                 <span class=""><em>6</em>折</span>
+                             </a>  
+                        </div>
+                        <div class="list-detail fl">
+                            <h3>女式真丝典雅柔色衬衫</h3>
+                             <div class="money">限时价￥<em>40.1</em></div>
+                             <p class="old">￥489</p>
+                             <a href="#" class="btn">立即抢购</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="item fl">
+                <div class="limit">
+                    <div class="boxhd clearfix">
+                        <h3 class="fl">量版囤货</h3>
+                        <span class="fr">全部&gt;</span>
+                    </div>
+                    <ul>
+                        <li class="clearfix">
+                             <div class="list-img fl">
+                               <a href="#">
+                                   <img src="./images/welfare2.png" alt="">
+                                 </a>  
+                            </div>
+                            <div class="list-detail fl">
+                                <a href="#">
+                                    <h3>女式真丝典雅柔色衬衫</h3>
+                                </a>
+                                <p class="money">￥489</p>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                             <div class="list-img fl">
+                               <a href="#">
+                                   <img src="./images/welfare2.png" alt="">
+                                 </a>  
+                            </div>
+                            <div class="list-detail fl">
+                                <a href="#">
+                                    <h3>女式真丝典雅柔色衬衫</h3>
+                                </a>
+                                <p class="money">￥489</p>
+                                <span></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="limit">
+                    <div class="boxhd clearfix">
+                        <h3 class="fl">量版囤货</h3>
+                        <span class="fr">全部&gt;</span>
+                    </div>
+                    <ul>
+                        <li class="clearfix">
+                             <div class="list-img fl">
+                               <a href="#">
+                                   <img src="./images/welfare2.png" alt="">
+                                 </a>  
+                            </div>
+                            <div class="list-detail fl">
+                                <a href="#">
+                                    <h3>女式真丝典雅柔色衬衫</h3>
+                                </a>
+                                <p class="money">￥489</p>
+                                <span></span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                             <div class="list-img fl">
+                               <a href="#">
+                                   <img src="./images/welfare2.png" alt="">
+                                 </a>  
+                            </div>
+                            <div class="list-detail fl">
+                                <a href="#">
+                                    <h3>女式真丝典雅柔色衬衫</h3>
+                                </a>
+                                <p class="money">￥489</p>
+                                <span></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 福利社结束 -->
+
+    <!-- 其他版块开始 -->
+    <div class="others type-page">
+         <div class="commonTitle">
+                <h2>居家生活</h2>
+                <a href="#" class="more">查看更多&gt;</a>
+                <ul class="navr fr clearfix">
+                    <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                </ul>
+            </div>
+            <div class="showBox">
+                <div class="banner">
+                     <a href=""> <img src="./images/banner.jpg" alt=""></a>
+                    <span class="turnbtn toLeft">
+                        &lt;
+                    </span>
+                     <span class="turnbtn toRight">
+                        &gt;
+                    </span>
+                    <ul class="slick-dot clearfix">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="list-box newProduct">
+                     <ul class="clearfix">
+                        <li>
+                            
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                     <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                           <li>
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                        <li>
+                            
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                     <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                           <li>
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+
+     <div class="others type-page">
+         <div class="commonTitle">
+                <h2>居家生活</h2>
+                <a href="#" class="more">查看更多&gt;</a>
+                <ul class="navr fr clearfix">
+                    <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                    <li class="line">/</li>
+                     <li><a href="#">夏日热卖</a></li>
+                </ul>
+            </div>
+            <div class="showBox">
+                <div class="banner">
+                     <a href=""> <img src="./images/banner.jpg" alt=""></a>
+                    <span class="turnbtn toLeft">
+                        &lt;
+                    </span>
+                     <span class="turnbtn toRight">
+                        &gt;
+                    </span>
+                    <ul class="slick-dot clearfix">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="list-box newProduct">
+                     <ul class="clearfix">
+                        <li>
+                            
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                     <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                           <li>
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                        <li>
+                            
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                     <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                           <li>
+                            <a href="#" title=""><div class="menu-img"><span>3色可选</span></div></a>
+                            <div class="detail">
+                                <span class="act">满赠</span>
+                                <p ><a href="" title="" class="productName">女式舒服软马蹄口乐福鞋</a></p>
+                                <p class="money">￥269</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+    </div>
+    <!-- 其他版块结束 -->
+
+    <!-- 甄选家开始 -->
+    <div class="selector type-page clearfix">
+         <div class="commonTitle">
+            <h2>甄选家</h2>
+               <span>我们在寻找有生活态度的你</span>
+         </div>
+         <div class="main-img"><a href=""></a></div>
+         <div class="item-img"><a href=""></a></div>
+         <div class="item-img"><a href=""></a></div>
+    </div>
+    <!-- 甄选家结束 -->
+    
+    <!-- 大家都在说开始 -->
+    <div class="allSay">
+        <div class="type-page ">
+            <div class="commonTitle">
+                <h2>大家都在说</h2>
+               <span>生活，没有统一标准</span>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <div class="say-img"><img src="./images/allSay.jpg" alt=""></div>
+                    <div class="comment-box">
+                        <p><span class="username">陈****飞</span><span class="time">2019-08-15 13:09:25</span></p>
+                        <div class="title-box  clearfix">
+                            <span class="title fl">
+                            蜜汁无骨凤爪
+                            </span>
+                            <span class="money fr">￥79</span>
+                        </div>
+                        <div class="comment">吃货人物奖品很精致</div>
+                    </div>
+                </li>
+                 <li>
+                    <div class="say-img"><img src="./images/allSay.jpg" alt=""></div>
+                    <div class="comment-box">
+                        <p><span class="username">陈****飞</span><span class="time">2019-08-15 13:09:25</span></p>
+                        <div class="title-box  clearfix">
+                            <span class="title fl">
+                            蜜汁无骨凤爪
+                            </span>
+                            <span class="money fr">￥79</span>
+                        </div>
+                        <div class="comment">吃货人物奖品很精致</div>
+                    </div>
+                </li>
+
+ <li>
+                    <div class="say-img"><img src="./images/allSay.jpg" alt=""></div>
+                    <div class="comment-box">
+                        <p><span class="username">陈****飞</span><span class="time">2019-08-15 13:09:25</span></p>
+                        <div class="title-box  clearfix">
+                            <span class="title fl">
+                            蜜汁无骨凤爪
+                            </span>
+                            <span class="money fr">￥79</span>
+                        </div>
+                        <div class="comment">吃货人物奖品很精致</div>
+                    </div>
+                </li>
+
+            </ul>
+        <button type="" class="turnbtn turnbtn-left">&lt;</button>
+        <button type="" class="turnbtn turnbtn-right">&gt;</button>
+         </div>
+    </div>
+    <!-- 大家都在说结束 -->
+        </div>
+    <!--底部结构-->
+    <div class="root">
+        <div class="root1">
+            <div class="type_page clearfix">
+                <ul>
+                    <li>
+                        <div class="root1_title">客户服务</div>
+                        <div class="root1_content1">
+                            <div class="clearfix">
+                                <div>
+                                    <div class="online_server"></div>
+                                    在线客服
+                                </div>
+                                <div>
+                                    <div class="user_feedback"></div>
+                                    用户反馈
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="root1_bd">
+                        <div class="root1_title">何为严选</div>
+                        <p class="root1_content2">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                        <div class="connectus">
+                            关注我们：<span></span><span></span><span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="root1_title">扫码下载严选APP</div>
+                        <img src="images/app.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="root2">
+            <div class="type_page">
+                <ul class="root2_title clearfix">
+                    <li><span></span>网易自营电商</li>
+                    <li><span></span>30天无忧退换货</li>
+                    <li><span></span>满88元免邮费</li>
+                    <li><span></span>品质保证</li>
+                </ul>
+                <div class="root2_content">
+                    <div class="root_nav">
+                        <a href="">关于我们</a>
+                        <span>|</span>
+                        <a href="">帮助中心</a>
+                        <span>|</span>
+                        <a href="">售后服务</a>
+                        <span>|</span>
+                        <a href="">配送与验收</a>
+                        <span>|</span>
+                        <a href="">商务合作</a>
+                        <span>|</span>
+                        <a href="">企业采购</a>
+                        <span>|</span>
+                        <a href="">开放平台</a>
+                        <span>|</span>
+                        <a href="">搜索推荐</a>
+                        <span>|</span>
+                        <a href="">友情链接</a>
+                        <span>|</span>
+                        <a href="">廉正举报</a>
+                    </div>
+                    <p class="root2_p1">食品经营许可证：JY13301080111719出版物经营许可证：新出发滨字第0132号妙得ICP证号：ICP 证浙B2-20160106浙杭食药监械经营备20171029号营业执照网易公司版权所有 © 1997-2019</p>
+                    <p>（浙杭）网械企备字[2019]第00119号（粤）网械平台备字（2019）第00004号单用途商业预付卡备案证：330100AAC0024 <img src="images/jingwei.gif" alt="" width="23" height="25"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="js/common.js"></script>
+    <script src="layui/layui.all.js"></script>
+    <script>
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+            });
+        });
+    </script>
+
+</html>

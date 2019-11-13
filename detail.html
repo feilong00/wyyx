@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>网易严选</title>
+    </head>
+    <link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=gold" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="css/detail.css" rel="stylesheet">
+    <style>
+      
+    </style>
+    <body>
+    <!--登录遮罩及登录主体结构-->
+        <div class="rlc" id="rlc">
+            <div class="rlc_main">
+                <h3>网易登录</h3>
+                <span class="rlc_close" id="rlc_close">x</span>
+                <form action="">
+                    <p>账号：<input type="text" name="username" id="username"></p>
+                    <p>密码：<input type="password" name="password" id="password"></p>
+                    <p><input type="submit" value="登录" class="login"></p>
+                </form>
+                <div class="rlc_main_root">
+                    <a href=""><span class="weChat"></span></a>
+                    <a href=""><span class="QQ"></span></a>
+                    <a href=""><span class="weibo"></span></a>
+                    <a href=""><span class="wangyi"></span></a>
+                    <a href="" class="userQuestion">遇到问题？</a>
+                </div>
+            </div>
+        </div>
+    <!--头结构-->
+        <div class="header">
+            <div class="top_nav">
+                <div class="type_page clearfix">
+                    <div class="top_nav_left">
+                        <a href=""><img src="https://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif" alt="">
+                            用浦发借记卡【满100立减20元】可叠加其他优惠
+                        </a>
+                    </div>
+                    <div class="top_nav_right">
+                        <a href="javascript:;" id="rlb">登录/注册</a>
+                        <span>|</span>
+                        <a href="">我的订单</a>
+                        <span>|</span>
+                        <a href="">会员</a>
+                        <span>|</span>
+                        <a href="">甄选家</a>
+                        <span>|</span>
+                        <a href="">企业采购</a>
+                        <span>|</span>
+                        <a href="">客户服务</a>
+                        <span>|</span>
+                        <a href="">APP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head_main">
+                <div class="type_page clearfix">
+                    <div class="logo"><img src="images/logo.png" alt=""></div>
+                    <div class="shopping_car">
+                        <a href="">
+                            <span class="glyphicon glyphicon-shopping-cart"></span><span>购物车</span>
+                            <span class="shopping_number"><span class="shopping_number">0</span></span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="search_box clearfix">
+                            <span class="search_icon"></span>
+                            <input type="text" name="" placeholder="爆款 全棉质条纹4件套"><button>搜索</button>
+                        </div>
+                        <div class="search_hotwords">
+                            <ul class="clearfix">
+                                <li><a href="" class="search_hotwords_active">轻弹云朵拖鞋9.9元</a></li>
+                                <span>|</span>
+                                <li><a href="">中秋月饼上新热卖</a></li>
+                                <span>|</span>
+                                <li><a href="">新上乳胶床品</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_nav">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li class="speical"><a href="">首页</a></li>
+                        <li><a href="">居家生活</a></li>
+                        <li><a href="">服饰鞋包</a></li>
+                        <li><a href="">美食酒水</a></li>
+                        <li><a href="">个护清洁</a></li>
+                        <li><a href="">母婴亲子</a></li>
+                        <li><a href="">运动旅游</a></li>
+                        <li><a href="">数码家电</a></li>
+                        <li><a href="">全球特色</a></li>
+                        <li><a href="">为你严选</a></li>
+                        <li class="special2"><a href="">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--隐藏头结构-->
+        <div class="header2" id="header2">
+            <div class="type_page">
+                <div class="header2_nav">
+                    <div class="type_page clearfix">
+                        <div class="header2_logo"></div>
+                        <div class="header2_icon">
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                        </div>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">居家生活</a></li>
+                            <li><a href="">服饰鞋包</a></li>
+                            <li><a href="">美食酒水</a></li>
+                            <li><a href="">个护清洁</a></li>
+                            <li><a href="">母婴亲子</a></li>
+                            <li><a href="">运动旅游</a></li>
+                            <li><a href="">数码家电</a></li>
+                            <li class="header2_special"><a href="">全球特色</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--侧边栏结构-->
+        <div class="side_bar" id="side_bar">
+            <ul>
+                <li class="side_bar_title">
+                    - 热销榜 -
+                </li>
+                <li><a href="" class="side_bar_first"><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png" alt="" width="30">全站<br>热销榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png" alt="" width="30">居家<br>生活榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/2318b65e996e14bc0707880040dfabb0.png" alt="" width="30">服饰<br>鞋包榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/8ca4557361e2fff394a5a94d0b73f3c6.png" alt="" width="30">美食<br>酒水榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/270bc2465ac7eed90ada40c92166678b.png" alt="" width="30">数码<br>家电榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/4723267aef758a7d805bb7c1447fdc44.png" alt="" width="30">个护<br>清洁榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/eec3af53eb17a4b117043e18ae7c7418.png" alt="" width="30">运动<br>旅游榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/a94b2f7f7ada813ae9c93f84d3d60d6f.png" alt="" width="30">母婴<br>亲子榜</a></li>
+                <li><a href="" class="none_bd"><img src="https://yanxuan.nosdn.127.net/9cb33f543dddd54c7cc157d29650dbf4.png" alt="" width="30">全球<br>特色榜</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="crumb">
+    <div class="type_page">
+        <span>
+            <span>首页</span>
+            <i aria-hidden="true" class="fa fa-angle-right"></i>
+        </span>
+        <span>
+            <a href="#">个护清洁</a>
+            <i aria-hidden="true" class="fa fa-angle-right"></i>
+        </span>
+        <span>
+            <a href="#">餐厨清洁</a>
+            <i aria-hidden="true" class="fa fa-angle-right"></i>
+        </span>
+        <span>
+            <a href="#">10件装 本色抑菌懒人抹布超值组 50节*10卷</a>
+        </span>
+    </div>
+</div>
+<div class="content">
+    <div class="type_page">
+        <div class="checkStand clearfix">
+            <div class="slide">
+                <div class="exhibition">
+                    <div class="view">
+                        <img src="images/detail/bimg1.png">
+                    </div>
+                    <div class="magnifier">
+                        <i aria-hidden="true" class="fa fa-search"></i>
+                    </div>
+                    <div class="mask"></div>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="#"><img src="images/detail/timg1.png"></a></li>
+                        <li><a href="#"><img src="images/detail/timg2.jpg"></a></li>
+                        <li><a href="#"><img src="images/detail/timg3.jpg"></a></li>
+                        <li><a href="#"><img src="images/detail/timg4.jpg"></a></li>
+                        <li><a href="#"><img src="images/detail/timg5.png"></a></li>
+                    </ul>
+                </div>
+                <a class="entrance">
+                    <span>企业采购更优惠</span>
+                    <i aria-hidden="true" class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="info">
+                <div class="intro">
+                    <div class="name">
+                        <sapn>10件装 本色抑菌懒人抹布超值组 50节*10卷</sapn>
+                        <a class="commentEntry" href="#">
+                            <span class="percent">99.8%</span>
+                            <br/>
+                            <span class="text">好评率 ></span>
+                        </a>
+                    </div>
+                    <div class="desc">折合¥11.9/卷，竹浆本色，银离子抑菌</div>
+                </div>
+                <div class="param">
+                    <div class="price">
+                        <div class="p-field clearfix">
+                            <div class="p-price _price">价格</div>
+                            <div class="p-num fl">
+                                <span>￥</span>
+                                <span>119</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="supermember">
+                                <img src="images/detail/member.png">
+                                <span>超级会员专享价¥113.1, 可省</span>
+                                <span style="font-size: 16px">￥5.9</span>
+                                <span>&nbsp;&nbsp;立即开通></span>
+                            </div>
+                            <div class="card">季卡仅售59元，开卡即送39元起免费试用商品</div>
+                        </div>
+                        <div class="feedback">
+                            <div class="_price">购物返</div>
+                            <div class="right">
+                                <span>新用户最高返</span>
+                                <span style="color:#C43C3B;">¥1.19回馈金 + 11积分</span>
+                                <i aria-hidden="true" class="fa fa-question-circle"></i>
+                            </div>
+                        </div>
+                        <div class="getCoupon clearfix">
+                            <div class="_price">领券</div>
+                            <div class="coupons">
+                                <span class="newGuy">新人15元直减</span>
+                                <span class="get">领取</span>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <span class="_price">配送</span>
+                            <div class="address">
+                                <span>至</span>
+                                <div class="addressName">
+                                    <span>请选择地址</span>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="server clearfix">
+                            <span class="_price">服务</span>
+                            <div class="policyBox">
+                                <div class="item">
+                                    <span>.&nbsp;</span>
+                                    <span>支持30天无忧退换货</span>
+                                    <span> &nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="item">
+                                    <span>.&nbsp;</span>
+                                    <span>48小时快速退款</span>
+                                    <span> &nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="item">
+                                    <span>.&nbsp;</span>
+                                    <span>满88元免邮费</span>
+                                    <span> &nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                <div class="item">
+                                    <span>.&nbsp;</span>
+                                    <span>网易自营品牌</span>
+                                    <span> &nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="size clearfix">
+                    <span class="_price">规格</span>
+                    <div class="cont">
+                        <a href="#">
+                            <span>10卷装</span>
+                            <i aria-hidden="true" class="fa fa-check"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="num clearfix">
+                    <span class="_price">数量</span>
+                    <div class="selectNum">
+                        <span>-</span>
+                        <input type="text" value="1">
+                        <span>+</span>
+                    </div>
+                </div>
+                <div class="btns">
+                    <a class="btn btnColor1">
+                        <span>
+                            <span>立即购买</span>
+                        </span>
+                    </a>
+                    <a class="btn btnColor2">
+                        <span>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>加入购物车</span>
+                        </span>
+                    </a>
+                    <div class="collect">
+                        <div class="top">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="bottom">
+                            <span>收藏</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--可能喜欢开始-->
+        <div class="mayLike">
+            <div class="mayTitle">
+                <span>你可能还喜欢</span>
+            </div>
+            <div class="mayList">
+                <div class="listCont">
+                    <div class="slickList clearfix">
+                        <ul class="polite">
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike2.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike3.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="pItem">
+                                <a href="#">
+                                    <img src="images/detail/maylike1.png">
+                                </a>
+                                <div class="pInfo">
+                                    <div class="pInfoTags"></div>
+                                    <h4 class="pName"><a href="#">本色抑菌懒人抹布 50节/卷</a></h4>
+                                    <p class="detail">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="slickBox">
+                        <li class="slickActice"></li>
+                        <li class=""></li>
+                        <li class=""></li>
+                    </ul>
+                </div>
+                <div class="listArrow listArrowLeft"><</div>
+                <div class="listArrow listArrowRight">></div>
+            </div>
+        </div>
+        <!--可能喜欢结束-->
+        <!--商品详情开始-->
+        <div class="particulars clearfix">
+            <!--商品详情左侧开始-->
+            <div class="left">
+                <div class="parNav">
+                    <div class="parInner">
+                        <ul>
+                            <li class="active">
+                                <span>详情</span>
+                            </li>
+                            <li>
+                                <span>评价</span>
+                                <span class="num">(1191)</span>
+                            </li>
+                            <li>
+                                <span>常见问题</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="detailHtml">
+                    <div class="advertising">
+                        <a href="#">
+                            <img src="images/detail/advertising1.jpg">
+                        </a>
+                    </div>
+                    <ul class="attrList">
+                        <li>
+                            <p class="name">特别说明</p>
+                            <span class="value">
+                                1、抹布使用场景丰富，是日常家庭中滋生细菌较多的物件；
+                                <br/>
+                                2、此款商品在使用2分钟后，对金黄色葡萄球菌，大肠杆菌，白色念珠菌具有较好的抑菌作用；
+                            </span>
+                        </li>
+                        <li>
+                            <span class="name">使用贴士</span>
+                            <span class="value">
+                                1、请勿将该商品长时间浸泡在液体中，以免长时间浸泡导致木浆脱落，产生碎屑，影响使用；
+                                <br/>
+                                2、请勿用沸水浸泡或清洁该商品，以免造成木浆与PP分层，产生碎屑，影响使用；
+                                <br/>
+                                3、该商品在不影响使用性能的前提下，可干湿使用，且可重复使用多次，但不具备耐磨性。
+                            </span>
+                        </li>
+                        <li>
+                            <span class="name">垃圾分类提示</span>
+                            <span class="value">
+                                外包装薄型塑料膜、胶带、使用后的抹布：干垃圾/其他垃圾；
+                                <br/>
+                                商品纸质腰封、使用完后剩下的纸筒：可回收垃圾；
+                                <br/>
+                                （具体视当地垃圾分类实施细则为准）
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="imgList">
+                        <p><img src="images/detail/detailHtmlImg1.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg2.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg3.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg4.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg5.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg6.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg7.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg8.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg9.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg101.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg11.jpg"></p>
+                        <p><img src="images/detail/detailHtmlImg12.jpg"></p>
+                    </div>
+                </div>
+                <div class="evaluate">
+
+                </div>
+            </div>
+            <!--商品详情左侧结束-->
+            <!--商品详情右侧开始-->
+            <div class="right">
+                <div class="hotSell">
+                    <div class="title">24小时热销榜</div>
+                    <div class="content">
+                        <ul>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell1.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell2.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell1.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell1.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell1.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="imgWrap">
+                                    <a href="#"><img src="images/detail/hotSell1.png"></a>
+                                </div>
+                                <div class="conts">
+                                    <div class="caption">
+                                        <a href="#">网易智造蒸汽沐足盆（可单买足浴包）</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>￥14.99</span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="topicSell">
+                    <div class="title">24小时热销榜</div>
+                    <div class="content">
+                        <ul>
+                            <li class="item">
+                                <a href="#">
+                                    <img src="images/detail/topicSell1.jpg">
+                                    <div class="text">这样的中秋月饼礼盒，美到舍不得送人</div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <img src="images/detail/topicSell2.jpg">
+                                    <div class="text">这样的中秋月饼礼盒，美到舍不得送人</div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <img src="images/detail/topicSell1.jpg">
+                                    <div class="text">这样的中秋月饼礼盒，美到舍不得送人</div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="#">
+                                    <img src="images/detail/topicSell1.jpg">
+                                    <div class="text">这样的中秋月饼礼盒，美到舍不得送人</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--商品详情右侧结束-->
+        </div>
+        <!--商品详情结束-->
+    </div>
+</div>
+        </div>
+    <!--底部结构-->
+        <div class="root">
+            <div class="root1">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li>
+                            <div class="root1_title">客户服务</div>
+                            <div class="root1_content1">
+                                <div class="clearfix">
+                                    <div>
+                                        <div class="online_server"></div>
+                                        在线客服
+                                    </div>
+                                    <div>
+                                        <div class="user_feedback"></div>
+                                        用户反馈
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="root1_bd">
+                            <div class="root1_title">何为严选</div>
+                            <p class="root1_content2">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                            <div class="connectus">
+                                关注我们：<span></span><span></span><span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="root1_title">扫码下载严选APP</div>
+                            <img src="images/app.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="root2">
+                <div class="type_page">
+                    <ul class="root2_title clearfix">
+                        <li><span></span>网易自营电商</li>
+                        <li><span></span>30天无忧退换货</li>
+                        <li><span></span>满88元免邮费</li>
+                        <li><span></span>品质保证</li>
+                    </ul>
+                    <div class="root2_content">
+                        <div class="root_nav">
+                            <a href="">关于我们</a>
+                            <span>|</span>
+                            <a href="">帮助中心</a>
+                            <span>|</span>
+                            <a href="">售后服务</a>
+                            <span>|</span>
+                            <a href="">配送与验收</a>
+                            <span>|</span>
+                            <a href="">商务合作</a>
+                            <span>|</span>
+                            <a href="">企业采购</a>
+                            <span>|</span>
+                            <a href="">开放平台</a>
+                            <span>|</span>
+                            <a href="">搜索推荐</a>
+                            <span>|</span>
+                            <a href="">友情链接</a>
+                            <span>|</span>
+                            <a href="">廉正举报</a>
+                        </div>
+                        <p class="root2_p1">食品经营许可证：JY13301080111719出版物经营许可证：新出发滨字第0132号妙得ICP证号：ICP 证浙B2-20160106浙杭食药监械经营备20171029号营业执照网易公司版权所有 © 1997-2019</p>
+                        <p>（浙杭）网械企备字[2019]第00119号（粤）网械平台备字（2019）第00004号单用途商业预付卡备案证：330100AAC0024 <img src="images/jingwei.gif" alt="" width="23" height="25"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/common.js"></script>
+    <script src="js/detail.js"></script>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script>
+    var ul=$('.polite');
+    // var ulHtml=ul.html();
+    var lis=$('.polite .pItem');
+    var arrowLeft=$('.listArrowLeft');
+    var arrowRight=$('.listArrowRight');
+    var flag=true;
+    var ulWidth=ul.width();
+    var distance=930;
+    var liWidth=lis.width();
+    var liSize=lis.size();
+
+
+    function slider(){
+    if (flag===true){
+        if(ul.css('left')==-930+'px'){
+
+        }
+        ul.css('left','+=-930px')
+    }
+    }
+
+
+    console.log(liSize);
+</script>
+
+</html>

@@ -1,0 +1,291 @@
+.side_bar{
+    display:none;
+}
+.sentiment{
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+/*编辑推荐开始*/
+.sentiment_editor{
+    background-color: #f5f5f5;
+    padding: 56px 0 50px;
+}
+.sentiment_editor_h{
+    width: 1090px;
+    margin: 0 auto;
+    font-size: 26px;
+    height: 32px;
+    line-height: 32px;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+}
+.sentiment_editor_c{
+    width: 1090px;
+    margin:0 auto;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
+.sentiment_editor_c_h{
+    margin:23px 0 18px;
+    font-weight: 400;
+    color: #666;
+    font-size:20px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+}
+.sentiment_editor_c_ul{
+    margin-right:-10px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+.sentiment_editor_c_li{
+    margin-right:0;
+    margin-bottom:0;
+    float: left;
+}
+.sentiment_editor_c_dv{
+    width: 265px;
+    height: 309px;
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.sentiment_editor_c_dv_t{
+    background-color: #fff;
+    position: relative;
+    margin-bottom:8px;
+}
+.sentiment_editor_c_dv_tp{
+    width: 220px;
+    height: 220px;
+    margin:0 auto;
+    background-image: url("../images/sentiment/3d1f9aa30d203ac773730b3aa4165429.jpg");
+}
+.sentiment_editor_c_dv:hover{
+    background-color: #f4f0ea;
+    box-shadow: 5px 5px 5px #dddddd;
+}
+.sentiment_editor_c_dv:hover img{
+    display: none;
+}
+.sentiment_editor_c_dv_t img{
+    width: 220px;
+    height: 220px;
+    transition: transform 1s;
+}
+.sentiment_editor_c_dv_b{
+    height: 107px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.sentiment_editor_c_dv_b-prdTag{
+    height: 20px;
+    font-size:0;
+    color: #ffffff;
+    margin:0 auto 3px;
+    overflow: hidden;
+}
+.sentiment_editor_c_dv_b-prdTag .sentiment_editor_c_dv_bsp{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size:12px;
+    background-color: #e36844;
+}
+.sentiment_editor_c_dv_b-name{
+    padding: 0 10px;
+    margin-bottom:4px;
+    height: 20px;
+    line-height: 20px;
+    white-space: normal;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.sentiment_editor_c_dv_b-name a{
+    color: #333333;
+}
+.sentiment_editor_c_dv_b-name a:hover{
+    color: #BC9D68;
+}
+.sentiment_editor_c_dv_b-price{
+    text-align: center;
+    color: #d4282d;
+}
+.sentiment_editor_c_dv_b-price-sp2{
+    color: #999;
+    font-size:12px;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+/*编辑推荐结束*/
+/*24小时热销开始*/
+.sentiment_hotSale{
+    background-color: #ffffff;
+    padding: 56px 0 50px;
+}
+
+.sentiment_hotSale_c{
+    width: 1090px;
+    margin:0 auto;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+.sentiment_hotSale_c_h{
+    margin:23px 0 18px;
+    font-weight: 400;
+    color: #666;
+    font-size:20px;
+    line-height: 26px;
+    height: 26px;
+    text-align: center;
+}
+.sentiment_hotSale_c_ul{
+    margin-right:-10px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.sentiment_hotSale_c_li{
+    margin-right:0;
+    margin-bottom:0;
+    float: left;
+}
+.sentiment_hotSale_c_dv{
+    width: 265px;
+    height: 309px;
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.sentiment_hotSale_c_dv_t{
+    background-color: #f5f5f5;
+    position: relative;
+    margin-bottom:8px;
+}
+.sentiment_hotSale_c_dv_tp{
+    width: 220px;
+    height: 220px;
+    margin:0 auto;
+    background-image: url("../images/sentiment/3d1f9aa30d203ac773730b3aa4165429.jpg");
+}
+.sentiment_hotSale_c_dv:hover{
+    background-color: #f4f0ea;
+    box-shadow: 5px 5px 5px #dddddd;
+}
+.sentiment_hotSale_c_dv:hover img{
+    display: none;
+}
+.sentiment_hotSale_c_dv_t img{
+    width: 220px;
+    height: 220px;
+    transition: transform 1s;
+}
+.sentiment_hotSale_c_dv_b{
+    height: 107px;
+    width: 220px;
+    box-sizing: border-box;
+}
+.sentiment_hotSale_c_dv_b-prdTag{
+    height: 20px;
+    font-size:0;
+    color: #ffffff;
+    margin:0 auto 3px;
+    overflow: hidden;
+}
+.sentiment_hotSale_c_dv_b-prdTag .sentiment_hotSale_c_dv_bsp{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 0 5px;
+    margin: 0 2px;
+    font-size:12px;
+    background-color: #e36844;
+}
+.sentiment_hotSale_c_dv_b-name{
+    padding: 0 10px;
+    margin-bottom:4px;
+    height: 20px;
+    line-height: 20px;
+    white-space: normal;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+.sentiment_hotSale_c_dv_b-name a{
+    color: #333333;
+}
+.sentiment_hotSale_c_dv_b-name a:hover{
+    color: #BC9D68;
+}
+.sentiment_hotSale_c_dv_b-price{
+    text-align: center;
+    color: #d4282d;
+}
+.sentiment_hotSale_c_dv_b-price-sp2{
+    color: #999;
+    font-size:12px;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+/*24小时热销结束*/
+/*人气周榜开始*/
+.sentiment_popular{
+    background-color: #ffffff;
+    padding: 56px 0 50px;
+}
+
+.sentiment_popular_c_dv{
+    width: 265px;
+    height: 309px;
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+.sentiment_popular_c_dv_t{
+    background-color: #f5f5f5;
+    position: relative;
+    margin-bottom:8px;
+}
+.sentiment_popular_c_dv_tp{
+    width: 220px;
+    height: 220px;
+    margin:0 auto;
+    background-image: url("../images/sentiment/7c82e656b0448784aa79e6029cbcbabc.jpg");
+}
+.sentiment_popular_c_dv:hover{
+    background-color: #f4f0ea;
+    box-shadow: 5px 5px 5px #dddddd;
+}
+.sentiment_popular_c_dv:hover img{
+    display: none;
+}
+.sentiment_popular_c_dv_t img{
+    width: 220px;
+    height: 220px;
+    transition: transform 1s;
+}
+/*人气周榜结束*/
+/*热销总榜开始*/
+.sentiment_total{
+    background-color: #ffffff;
+    padding: 56px 0 50px;
+}
+/*热销总榜结束*/

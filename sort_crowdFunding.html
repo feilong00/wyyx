@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>网易严选</title>
+    </head>
+    <link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=gold" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="css/sort_crowdFunding.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+      
+    </style>
+    <body>
+    <!--登录遮罩及登录主体结构-->
+        <div class="rlc" id="rlc">
+            <div class="rlc_main">
+                <h3>网易登录</h3>
+                <span class="rlc_close" id="rlc_close">x</span>
+                <form action="">
+                    <p>账号：<input type="text" name="username" id="username"></p>
+                    <p>密码：<input type="password" name="password" id="password"></p>
+                    <p><input type="submit" value="登录" class="login"></p>
+                </form>
+                <div class="rlc_main_root">
+                    <a href=""><span class="weChat"></span></a>
+                    <a href=""><span class="QQ"></span></a>
+                    <a href=""><span class="weibo"></span></a>
+                    <a href=""><span class="wangyi"></span></a>
+                    <a href="" class="userQuestion">遇到问题？</a>
+                </div>
+            </div>
+        </div>
+    <!--头结构-->
+        <div class="header">
+            <div class="top_nav">
+                <div class="type_page clearfix">
+                    <div class="top_nav_left">
+                        <a href=""><img src="https://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif" alt="">
+                            用浦发借记卡【满100立减20元】可叠加其他优惠
+                        </a>
+                    </div>
+                    <div class="top_nav_right">
+                        <a href="javascript:;" id="rlb">登录/注册</a>
+                        <span>|</span>
+                        <a href="">我的订单</a>
+                        <span>|</span>
+                        <a href="">会员</a>
+                        <span>|</span>
+                        <a href="">甄选家</a>
+                        <span>|</span>
+                        <a href="">企业采购</a>
+                        <span>|</span>
+                        <a href="">客户服务</a>
+                        <span>|</span>
+                        <a href="">APP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="head_main">
+                <div class="type_page clearfix">
+                    <div class="logo"><img src="images/logo.png" alt=""></div>
+                    <div class="shopping_car">
+                        <a href="">
+                            <span class="glyphicon glyphicon-shopping-cart"></span><span>购物车</span>
+                            <span class="shopping_number"><span class="shopping_number">0</span></span>
+                        </a>
+                    </div>
+                    <div class="search">
+                        <div class="search_box clearfix">
+                            <span class="search_icon"></span>
+                            <input type="text" name="" placeholder="爆款 全棉质条纹4件套"><button>搜索</button>
+                        </div>
+                        <div class="search_hotwords">
+                            <ul class="clearfix">
+                                <li><a href="" class="search_hotwords_active">轻弹云朵拖鞋9.9元</a></li>
+                                <span>|</span>
+                                <li><a href="">中秋月饼上新热卖</a></li>
+                                <span>|</span>
+                                <li><a href="">新上乳胶床品</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_nav">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li class="speical"><a href="">首页</a></li>
+                        <li><a href="">居家生活</a></li>
+                        <li><a href="">服饰鞋包</a></li>
+                        <li><a href="">美食酒水</a></li>
+                        <li><a href="">个护清洁</a></li>
+                        <li><a href="">母婴亲子</a></li>
+                        <li><a href="">运动旅游</a></li>
+                        <li><a href="">数码家电</a></li>
+                        <li><a href="">全球特色</a></li>
+                        <li><a href="">为你严选</a></li>
+                        <li class="special2"><a href="">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--隐藏头结构-->
+        <div class="header2" id="header2">
+            <div class="type_page">
+                <div class="header2_nav">
+                    <div class="type_page clearfix">
+                        <div class="header2_logo"></div>
+                        <div class="header2_icon">
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                            <a href=""><span></span></a>
+                        </div>
+                        <ul>
+                            <li><a href="">首页</a></li>
+                            <li><a href="">居家生活</a></li>
+                            <li><a href="">服饰鞋包</a></li>
+                            <li><a href="">美食酒水</a></li>
+                            <li><a href="">个护清洁</a></li>
+                            <li><a href="">母婴亲子</a></li>
+                            <li><a href="">运动旅游</a></li>
+                            <li><a href="">数码家电</a></li>
+                            <li class="header2_special"><a href="">全球特色</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--侧边栏结构-->
+        <div class="side_bar" id="side_bar">
+            <ul>
+                <li class="side_bar_title">
+                    - 热销榜 -
+                </li>
+                <li><a href="" class="side_bar_first"><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png" alt="" width="30">全站<br>热销榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png" alt="" width="30">居家<br>生活榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/2318b65e996e14bc0707880040dfabb0.png" alt="" width="30">服饰<br>鞋包榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/8ca4557361e2fff394a5a94d0b73f3c6.png" alt="" width="30">美食<br>酒水榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/270bc2465ac7eed90ada40c92166678b.png" alt="" width="30">数码<br>家电榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/4723267aef758a7d805bb7c1447fdc44.png" alt="" width="30">个护<br>清洁榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/eec3af53eb17a4b117043e18ae7c7418.png" alt="" width="30">运动<br>旅游榜</a></li>
+                <li><a href=""><img src="https://yanxuan.nosdn.127.net/a94b2f7f7ada813ae9c93f84d3d60d6f.png" alt="" width="30">母婴<br>亲子榜</a></li>
+                <li><a href="" class="none_bd"><img src="https://yanxuan.nosdn.127.net/9cb33f543dddd54c7cc157d29650dbf4.png" alt="" width="30">全球<br>特色榜</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="banner">
+        <div class="layui-carousel" id="test1">
+            <div carousel-item>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/a4a47997dabd2828c97a32dc75d0ba44.jpg?quality=95&thumbnail=1920y420&imageView" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/15175584364793457.jpg?quality=95&thumbnail=1920y420&imageView" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/fc7e3419bb4ca0113b7cae86ddf3b0e2.jpg?quality=95&thumbnail=1920y420&imageView" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/6c43379f659efd7949e65d08b2015ba1.jpg?quality=95&thumbnail=1920y420&imageView" alt="" height="420"></a></div>
+            </div>
+        </div>
+    </div>
+    <!--part1开始(玩转众筹)-->
+    <div class="m-nav">
+        <div class="type_page clearfix">
+            <p class="tlt">
+                <span>玩转</span>
+                <br/>
+                <span>众筹</span>
+            </p>
+            <ul class="iconList">
+                <li class="icon1">
+                    <img src="images/crowdFunding/icon1.png">
+                    <span>怦然心动的项目</span>
+                </li>
+                <li class="icon2">
+                    <img src="images/crowdFunding/icon2.png">
+                    <span>支持产品生产</span>
+                </li>
+                <li class="icon3">
+                    <img src="images/crowdFunding/icon3.png">
+                    <span>项目众筹成功</span>
+                </li>
+                <li class="icon4">
+                    <img src="images/crowdFunding/icon4.png">
+                    <span>抢先体验新品</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--part1结束(玩转众筹)-->
+    <!--part2开始(正在众筹，即将开始，众筹结束)-->
+    <div class="m-projects">
+        <div class="type_page">
+            <!--(正在众筹)开始-->
+            <div class="m-project">
+                <div class="m-title">
+                    <div class="u-line">
+                        <div class="cont">
+                            <img src="images/crowdFunding/icon5.png">
+                            <p>正在众筹</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="m-itemList clearfix">
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic2.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic3.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress" style="width: 42%;"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">42%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic4.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress" style="width: 62%;"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">62%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress" style="width: 88%;"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">88%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/pic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">百年菩提盏中生，失传木叶盏</p>
+                            <p class="u-desc">黄金有价，木叶盏无价，数十年精研，保精品呈现</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">105%</span>
+                                <ul class="m-detail">
+                                    <li>
+                                        <p class="text">￥10.3万</p>
+                                        <p class="desc">已筹金额</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">59人</p>
+                                        <p class="desc">支持人数</p>
+                                    </li>
+                                    <li>
+                                        <p class="text">27天20时</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--(正在众筹)结束-->
+            <!--(即将开始)开始-->
+            <div class="m-project">
+                <div class="m-title">
+                    <div class="u-line">
+                        <div class="cont">
+                            <img src="images/crowdFunding/icon6.png">
+                            <p>正在众筹</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="m-itemList clearfix">
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/fpic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">一件能吸水的干泡台</p>
+                            <p class="u-desc">滴水立马不见踪影，可遇沸水而不裂，沾茶水而不霉，让茶事更轻松</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-remind">
+                                    <span class="u-time">0时-224分后开始</span>
+                                    <a class="button">开始提醒</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/fpic2.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">一件能吸水的干泡台</p>
+                            <p class="u-desc">滴水立马不见踪影，可遇沸水而不裂，沾茶水而不霉，让茶事更轻松</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-remind">
+                                    <span class="u-time">0时-224分后开始</span>
+                                    <a class="button">开始提醒</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/fpic3.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">一件能吸水的干泡台</p>
+                            <p class="u-desc">滴水立马不见踪影，可遇沸水而不裂，沾茶水而不霉，让茶事更轻松</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-remind">
+                                    <span class="u-time">0时-224分后开始</span>
+                                    <a class="button">开始提醒</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--(即将开始)结束-->
+            <!--(众筹结束)开始-->
+            <div class="m-project">
+                <div class="m-title">
+                    <div class="u-line">
+                        <div class="cont">
+                            <img src="images/crowdFunding/icon7.png">
+                            <p>众筹结束</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="m-itemList clearfix">
+                    <li class="m-item">
+                    <div class="u-pic">
+                        <img src="images/crowdFunding/epic1.png">
+                    </div>
+                    <div class="m-info">
+                        <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                        <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                        <div class="m-progress">
+                            <div class="m-progressBar">
+                                <div class="u-bar">
+                                    <div class="progress"></div>
+                                </div>
+                            </div>
+                            <span class="u-percent">0%</span>
+                            <div class="m-end">
+                                <span class="u-txt">众筹成功</span>
+                                <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-item even">
+                        <div class="u-pic">
+                            <img src="images/crowdFunding/epic1.png">
+                        </div>
+                        <div class="m-info">
+                            <p class="u-name">众筹一场“龙泉青瓷编年史”</p>
+                            <p class="u-desc">六代传承，复现宋元明三朝青瓷盛况</p>
+                            <div class="m-progress">
+                                <div class="m-progressBar">
+                                    <div class="u-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                                <span class="u-percent">0%</span>
+                                <div class="m-end">
+                                    <span class="u-txt">众筹成功</span>
+                                    <span class="u-amount">
+                                        <span>已筹金额</span>
+                                        <span class="amount">￥15.5万</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--(众筹结束)结束-->
+        </div>
+    </div>
+    <!--part2结束(正在众筹，即将开始，众筹结束)-->
+        </div>
+    <!--底部结构-->
+        <div class="root">
+            <div class="root1">
+                <div class="type_page clearfix">
+                    <ul>
+                        <li>
+                            <div class="root1_title">客户服务</div>
+                            <div class="root1_content1">
+                                <div class="clearfix">
+                                    <div>
+                                        <div class="online_server"></div>
+                                        在线客服
+                                    </div>
+                                    <div>
+                                        <div class="user_feedback"></div>
+                                        用户反馈
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="root1_bd">
+                            <div class="root1_title">何为严选</div>
+                            <p class="root1_content2">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                            <div class="connectus">
+                                关注我们：<span></span><span></span><span></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="root1_title">扫码下载严选APP</div>
+                            <img src="images/app.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="root2">
+                <div class="type_page">
+                    <ul class="root2_title clearfix">
+                        <li><span></span>网易自营电商</li>
+                        <li><span></span>30天无忧退换货</li>
+                        <li><span></span>满88元免邮费</li>
+                        <li><span></span>品质保证</li>
+                    </ul>
+                    <div class="root2_content">
+                        <div class="root_nav">
+                            <a href="">关于我们</a>
+                            <span>|</span>
+                            <a href="">帮助中心</a>
+                            <span>|</span>
+                            <a href="">售后服务</a>
+                            <span>|</span>
+                            <a href="">配送与验收</a>
+                            <span>|</span>
+                            <a href="">商务合作</a>
+                            <span>|</span>
+                            <a href="">企业采购</a>
+                            <span>|</span>
+                            <a href="">开放平台</a>
+                            <span>|</span>
+                            <a href="">搜索推荐</a>
+                            <span>|</span>
+                            <a href="">友情链接</a>
+                            <span>|</span>
+                            <a href="">廉正举报</a>
+                        </div>
+                        <p class="root2_p1">食品经营许可证：JY13301080111719出版物经营许可证：新出发滨字第0132号妙得ICP证号：ICP 证浙B2-20160106浙杭食药监械经营备20171029号营业执照网易公司版权所有 © 1997-2019</p>
+                        <p>（浙杭）网械企备字[2019]第00119号（粤）网械平台备字（2019）第00004号单用途商业预付卡备案证：330100AAC0024 <img src="images/jingwei.gif" alt="" width="23" height="25"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/common.js"></script>
+    <script src="layui/layui.all.js"></script>
+    <script>
+        layui.use('carousel', function(){
+            var carousel = layui.carousel;
+            //建造实例
+            carousel.render({
+                elem: '#test1'
+                ,width: '100%' //设置容器宽度
+                ,arrow: 'always' //始终显示箭头
+                //,anim: 'updown' //切换动画方式
+            });
+        });
+    </script>
+
+</html>

@@ -1,0 +1,232 @@
+.main {
+    background-color: #f5f5f5;
+}
+.side_bar {
+    display: none;
+}
+/*轮播图样式*/
+.banner .layui-carousel{
+    height: 420px !important;
+    overflow: hidden;
+}
+.layui-carousel img {
+    position: relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.banner {
+    position: relative;
+    text-align: center;
+}
+.layui-carousel-arrow[lay-type=sub] {
+    width: 50px;
+    height: 50px;
+    background-color: #D0C4AF;
+    left: 115px !important;
+}
+.layui-carousel-arrow[lay-type=add] {
+    width: 50px;
+    height: 50px;
+    background-color: #D0C4AF;
+    right: 115px !important;
+}
+.layui-carousel-arrow[lay-type=add]:hover {
+    background-color: #B19D79;
+}
+.layui-carousel-arrow[lay-type=sub]:hover {
+    background-color: #B19D79;
+}
+/*推荐商品展示样式*/
+.recommend {
+    margin-top: 30px;
+}
+.recommend ul li {
+    float: left;
+    margin-left: 10px;
+}
+.recommend .margin_none {
+    margin-left: 0;
+}
+/*今日特价样式*/
+.special_offer {
+    margin-top: 60px;
+    position: relative;
+}
+.so_title {
+    margin-bottom: 10px;
+}
+.look_all {
+    position: absolute;
+    top: 75px;
+    background-color: #537f9b;
+    width: 110px;
+    height: 34px;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 34px;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    right: 20px;
+}
+.so_content ul {
+    width: 1100px;
+}
+.so_content ul li {
+    float: left;
+    height: 200px;
+    width: 540px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+}
+.so_content_img {
+    float: left;
+    overflow: hidden;
+}
+.so_content_img img {
+    transition: transform 1s;
+}
+.so_content_img img:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+.so_content_describe {
+    float: right;
+    width: 300px;
+    height: 200px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+.Tag {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #e36844;
+}
+.goods_title {
+    margin-top: 16px;
+    font-size: 18px;
+}
+.goods_title a:hover {
+    color: #B19D79;
+}
+.goods_describe {
+    line-height: 1;
+    font-size: 14px;
+    color: #999;
+    margin: 8px auto 22px;
+}
+.now_price {
+    font-size: 18px;
+    color: #BE4141;
+}
+.before_price {
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+/*量贩囤货样式*/
+.stock_up {
+    position: relative;
+    margin-top: 60px;
+}
+.stock_up .look_all {
+    background-color: #b6a07b;
+}
+.addshopping_car {
+    display: inline-block;
+    float: right;
+    width: 120px;
+    height: 28px;
+    font-size: 16px;
+    margin-right: 40px;
+}
+.addshopping_car a {
+    display: inline-block;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border:1px solid #B4A078;
+    color: #B4A078;
+    border-radius:19px;
+}
+.addshopping_car a:hover {
+    background:#F5F3EF;
+}
+/*app特价样式*/
+.app_price {
+    position: relative;
+    margin-top: 60px;
+}
+.app_price .look_all {
+    background-color: #785726;
+}
+.ap_content ul {
+    width: 1100px;
+}
+.ap_content ul li {
+    float: left;
+    margin-right: 10px;
+    height: 400px;
+    width: 265px;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+.ap_Tag {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #A94528;
+    background-color: #F8BC59;
+    margin-top: 10px;
+}
+.app_price .goods_describe {
+    margin: 8px auto 10px;
+}
+.app_price .goods_title {
+    margin-top: 10px;
+}
+/*今日买赠样式*/
+.buy_send {
+    position: relative;
+    margin-top: 60px;
+}
+.buy_send .look_all {
+    background-color: #ab5364;
+}
+/*超值组合样式*/
+.value_combination {
+    position: relative;
+    margin-top: 60px;
+    padding-bottom: 60px;
+}
+.value_combination .look_all {
+    background-color:#647b63;
+}
+.vc_content ul {
+    width: 1120px;
+}
+.vc_content ul li{
+    width: 357px;
+    height: 490px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background: #ffffff;
+}
+.vc_content .goods_describe {
+    margin-bottom: 10px;
+}

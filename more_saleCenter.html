@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>more_saleCenter</title>
+</head>
+<link rel="shortcut icon" href="https://you.163.com/favicon.ico?r=gold" type="image/x-icon" />
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="layui/css/layui.css">
+<link rel="stylesheet" href="css/more_saleCenter.css">
+<body>
+<!--登录遮罩及登录主体结构-->
+<div class="rlc" id="rlc">
+    <div class="rlc_main">
+        <h3>网易登录</h3>
+        <span class="rlc_close" id="rlc_close">x</span>
+        <form action="">
+            <p>账号：<input type="text" name="username" id="username"></p>
+            <p>密码：<input type="password" name="password" id="password"></p>
+            <p><input type="submit" value="登录" class="login"></p>
+        </form>
+        <div class="rlc_main_root">
+            <a href=""><span class="weChat"></span></a>
+            <a href=""><span class="QQ"></span></a>
+            <a href=""><span class="weibo"></span></a>
+            <a href=""><span class="wangyi"></span></a>
+            <a href="" class="userQuestion">遇到问题？</a>
+        </div>
+    </div>
+</div>
+<!--头结构-->
+<div class="header">
+    <div class="top_nav">
+        <div class="type_page clearfix">
+            <div class="top_nav_left">
+                <a href=""><img src="https://yanxuan.nosdn.127.net/d132c2561f18f1149d566a60d05fd9b7.gif" alt="">
+                    用浦发借记卡【满100立减20元】可叠加其他优惠
+                </a>
+            </div>
+            <div class="top_nav_right">
+                <a href="javascript:;" id="rlb">登录/注册</a>
+                <span>|</span>
+                <a href="">我的订单</a>
+                <span>|</span>
+                <a href="">会员</a>
+                <span>|</span>
+                <a href="">甄选家</a>
+                <span>|</span>
+                <a href="">企业采购</a>
+                <span>|</span>
+                <a href="">客户服务</a>
+                <span>|</span>
+                <a href="">APP</a>
+            </div>
+        </div>
+    </div>
+    <div class="head_main">
+        <div class="type_page clearfix">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <div class="shopping_car">
+                <a href="">
+                    <span class="glyphicon glyphicon-shopping-cart"></span><span>购物车</span>
+                    <span class="shopping_number"><span class="shopping_number">0</span></span>
+                </a>
+            </div>
+            <div class="search">
+                <div class="search_box clearfix">
+                    <span class="search_icon"></span>
+                    <input type="text" name="" placeholder="爆款 全棉质条纹4件套"><button>搜索</button>
+                </div>
+                <div class="search_hotwords">
+                    <ul class="clearfix">
+                        <li><a href="" class="search_hotwords_active">轻弹云朵拖鞋9.9元</a></li>
+                        <span>|</span>
+                        <li><a href="">中秋月饼上新热卖</a></li>
+                        <span>|</span>
+                        <li><a href="">新上乳胶床品</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_nav">
+        <div class="type_page clearfix">
+            <ul>
+                <li class="speical"><a href="">首页</a></li>
+                <li><a href="">居家生活</a></li>
+                <li><a href="">服饰鞋包</a></li>
+                <li><a href="">美食酒水</a></li>
+                <li><a href="">个护清洁</a></li>
+                <li><a href="">母婴亲子</a></li>
+                <li><a href="">运动旅游</a></li>
+                <li><a href="">数码家电</a></li>
+                <li><a href="">全球特色</a></li>
+                <li><a href="">为你严选</a></li>
+                <li class="special2"><a href="">众筹</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--隐藏头结构-->
+<div class="header2" id="header2">
+    <div class="type_page">
+        <div class="header2_nav">
+            <div class="type_page clearfix">
+                <div class="header2_logo"></div>
+                <div class="header2_icon">
+                    <a href=""><span></span></a>
+                    <a href=""><span></span></a>
+                    <a href=""><span></span></a>
+                </div>
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">居家生活</a></li>
+                    <li><a href="">服饰鞋包</a></li>
+                    <li><a href="">美食酒水</a></li>
+                    <li><a href="">个护清洁</a></li>
+                    <li><a href="">母婴亲子</a></li>
+                    <li><a href="">运动旅游</a></li>
+                    <li><a href="">数码家电</a></li>
+                    <li class="header2_special"><a href="">全球特色</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--侧边栏结构-->
+<div class="side_bar" id="side_bar">
+    <ul>
+        <li class="side_bar_title">
+            - 热销榜 -
+        </li>
+        <li><a href="" class="side_bar_first"><img src="https://yanxuan.nosdn.127.net/d83d6cc58589e7b9540e57809920d961.png" alt="" width="30">全站<br>热销榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/288d84fe691240d9f87271b293f39b67.png" alt="" width="30">居家<br>生活榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/2318b65e996e14bc0707880040dfabb0.png" alt="" width="30">服饰<br>鞋包榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/8ca4557361e2fff394a5a94d0b73f3c6.png" alt="" width="30">美食<br>酒水榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/270bc2465ac7eed90ada40c92166678b.png" alt="" width="30">数码<br>家电榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/4723267aef758a7d805bb7c1447fdc44.png" alt="" width="30">个护<br>清洁榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/eec3af53eb17a4b117043e18ae7c7418.png" alt="" width="30">运动<br>旅游榜</a></li>
+        <li><a href=""><img src="https://yanxuan.nosdn.127.net/a94b2f7f7ada813ae9c93f84d3d60d6f.png" alt="" width="30">母婴<br>亲子榜</a></li>
+        <li><a href="" class="none_bd"><img src="https://yanxuan.nosdn.127.net/9cb33f543dddd54c7cc157d29650dbf4.png" alt="" width="30">全球<br>特色榜</a></li>
+    </ul>
+</div>
+<!--主体结构-->
+<div class="main">
+    <!--轮播图结构-->
+    <div class="banner">
+        <div class="layui-carousel" id="test1">
+            <div carousel-item>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/44abeff6f9ab2542b7fea16739d6fdfa.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/82c4a96e0eaec32234d8318d2d93ea64.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/e960937fcd45e155718ac6f219f5fc7b.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/584c7e0d86ab40226eb648edc27f667f.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+                <div><a href=""><img src="https://yanxuan.nosdn.127.net/91c71f339b0740d98e9efa3bc9cf69d6.jpg?imageView&quality=95&thumbnail=1920x420" alt="" height="420"></a></div>
+            </div>
+        </div>
+    </div>
+    <!--推荐商品展示结构-->
+    <div class="recommend type_page">
+        <ul class="clearfix">
+            <li class="margin_none"><img src="http://yanxuan.nosdn.127.net/d712c3c0d1efef7d66d2106b391a89b9.jpg" alt="" height="130"></li>
+            <li><img src="http://yanxuan.nosdn.127.net/0acb75a1de9bb263db6c2cdad7f1bd29.jpg" alt="" height="130"></li>
+            <li><img src="http://yanxuan.nosdn.127.net/69a8f641bc0c76362d77ae12e57b82cc.jpg" alt="" height="130"></li>
+            <li><img src="https://yanxuan.nosdn.127.net/9492ccb8c0a2674ddfed544cb453aa56.png" alt="" height="130"></li>
+        </ul>
+    </div>
+    <!--今日特价结构-->
+    <div class="special_offer type_page">
+        <div class="so_title">
+            <a href=""><img src="images/specialoffer.png" alt=""></a>
+            <button class="look_all">查看全部</button>
+        </div>
+        <div class="so_content">
+            <ul class="clearfix">
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/e7267c8d5fcfd26c8ca7db251a2437cb.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">特价</span>
+                        <p class="goods_title"><a href="">现代组合全皮沙发</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price"><span class="now_price">￥17189</span><span class="before_price">￥19011</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/2813f08144e4f56b52586220a47b2c08.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">好货内部价</span>
+                        <p class="goods_title"><a href="">泰国制造 天然乳胶枕 释压按摩</a></p>
+                        <p class="goods_describe">240个按摩颗粒，乳胶天然回弹</p>
+                        <p class="goods_price"><span class="now_price">￥189</span><span class="before_price">￥191</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/3f653f853f459db47a51b5684ade6fc5.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">季末特惠</span>
+                        <p class="goods_title"><a href="">女式极简牛皮桶包</a></p>
+                        <p class="goods_describe">美国全粒面牛皮，仅售供应商建议价的1/5</p>
+                        <p class="goods_price"><span class="now_price">￥171</span><span class="before_price">￥190</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/3414c65ff39cee2aa0ab58638446f05c.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">特价</span>
+                        <p class="goods_title"><a href="">防螨静音弹簧乳胶床垫</a></p>
+                        <p class="goods_describe">物理防螨 七区承托</p>
+                        <p class="goods_price"><span class="now_price">￥1719</span><span class="before_price">￥1900</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/e7267c8d5fcfd26c8ca7db251a2437cb.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">特价</span>
+                        <p class="goods_title"><a href="">现代组合全皮沙发</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price"><span class="now_price">￥17189</span><span class="before_price">￥19011</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/2813f08144e4f56b52586220a47b2c08.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">好货内部价</span>
+                        <p class="goods_title"><a href="">泰国制造 天然乳胶枕 释压按摩</a></p>
+                        <p class="goods_describe">240个按摩颗粒，乳胶天然回弹</p>
+                        <p class="goods_price"><span class="now_price">￥189</span><span class="before_price">￥191</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--量贩囤货结构-->
+    <div class="stock_up type_page">
+        <div class="so_title">
+            <a href=""><img src="images/stock_up.png" alt=""></a>
+            <button class="look_all">查看全部</button>
+        </div>
+        <div class="so_content">
+            <ul class="clearfix">
+                <li>
+                    <div class="so_content_img">
+                        <img src="http://yanxuan.nosdn.127.net/47561399d63af0ea7582eb256d8ef559.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <p class="goods_title"><a href="">提手式分类垃圾袋超值组 24卷装</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price">
+                            <span class="now_price">￥99</span>
+                            <span class="addshopping_car">
+                                <a href="">
+                                    <span>加入购物车</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="http://yanxuan.nosdn.127.net/4fc7ea43e829af4ed31e09673f68db89.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <p class="goods_title"><a href="">10件装 本色抑菌懒人抹布超值组 50节</a></p>
+                        <p class="goods_describe">折合¥11.9/卷，竹浆本色，银离子抑菌</p>
+                        <p class="goods_price">
+                            <span class="now_price">￥99</span>
+                            <span class="addshopping_car">
+                                <a href="">
+                                    <span>加入购物车</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="http://yanxuan.nosdn.127.net/0b43bd83a86fd132f39e7d76829ed78f.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <p class="goods_title"><a href="">提手式分类垃圾袋超值组 24卷装</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price">
+                            <span class="now_price">￥99</span>
+                            <span class="addshopping_car">
+                                <a href="">
+                                    <span>加入购物车</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="http://yanxuan.nosdn.127.net/8be3d1c5738d47c19814ad92a9618671.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <p class="goods_title"><a href="">提手式分类垃圾袋超值组 24卷装</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price">
+                            <span class="now_price">￥99</span>
+                            <span class="addshopping_car">
+                                <a href="">
+                                    <span>加入购物车</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/0a053f1407b976b4b9523b837b15c247.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <p class="goods_title"><a href="">提手式分类垃圾袋超值组 24卷装</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price">
+                            <span class="now_price">￥99</span>
+                            <span class="addshopping_car">
+                                <a href="">
+                                    <span>加入购物车</span>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!--app特价结构-->
+    <div class="app_price type_page">
+        <div class="so_title">
+            <a href=""><img src="images/app_price.png" alt=""></a>
+            <button class="look_all">查看全部</button>
+        </div>
+        <div class="ap_content">
+            <ul class="clearfix">
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/51041722968252759caad186c705ce52.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">网易智造减压眼部按摩仪</a></p>
+                    <p class="goods_describe">让眼睛享受全方位按摩</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/c4f3434dc6f021dec0cbac1b000559bf.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">4款可选 赋活原液系列</a></p>
+                    <p class="goods_describe">当肌立断，精准护肤</p>
+                    <p class="goods_price"><span class="now_price">￥510</span><span class="before_price">￥726</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/59e56e637298797464c0a434560879c4.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">超轻口袋遮阳伞</a></p>
+                    <p class="goods_describe">轻松放入口袋，随身出行，高效防晒，</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/25d2e889ca41cdce1b1f72aa9605c47e.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">女式轻软舒弹健步鞋升级款</a></p>
+                    <p class="goods_describe">平均140g/只，宛若没穿鞋的轻盈</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/f6666a10268f5a4b350e5f158b7bc72a.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">可替换防潮防霉除湿桶</a></p>
+                    <p class="goods_describe">吸湿防潮看得见</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/25d2e889ca41cdce1b1f72aa9605c47e.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">女式轻软舒弹健步鞋升级款</a></p>
+                    <p class="goods_describe">平均140g/只，宛若没穿鞋的轻盈</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/f6666a10268f5a4b350e5f158b7bc72a.png?quality=95&thumbnail=265x265&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">可替换防潮防霉除湿桶</a></p>
+                    <p class="goods_describe">吸湿防潮看得见</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--今日买赠结构-->
+    <div class="buy_send type_page">
+        <div class="so_title">
+            <a href=""><img src="images/buysend.png" alt=""></a>
+            <button class="look_all">查看全部</button>
+        </div>
+        <div class="so_content">
+            <ul class="clearfix">
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/e7267c8d5fcfd26c8ca7db251a2437cb.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">现代组合全皮沙发</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price"><span class="now_price">￥17189</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/488b706c00fcc2d55f69f73612687b48.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">网易智造低压纳米热敷护腰</a></p>
+                        <p class="goods_describe">买就送网易智造编织纹手机软壳</p>
+                        <p class="goods_price"><span class="now_price">￥168</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/d4aa403fcee9c255b8191d658aeca3db.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">网易智造太空舱按摩大师椅</a></p>
+                        <p class="goods_describe">买就送网易智造月光胆机音响</p>
+                        <p class="goods_price"><span class="now_price">￥15789</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/e7267c8d5fcfd26c8ca7db251a2437cb.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">现代组合全皮沙发</a></p>
+                        <p class="goods_describe">高端品质 松软坐感</p>
+                        <p class="goods_price"><span class="now_price">￥17189</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/488b706c00fcc2d55f69f73612687b48.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">网易智造低压纳米热敷护腰</a></p>
+                        <p class="goods_describe">买就送网易智造编织纹手机软壳</p>
+                        <p class="goods_price"><span class="now_price">￥168</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="so_content_img">
+                        <img src="https://yanxuan-item.nosdn.127.net/d4aa403fcee9c255b8191d658aeca3db.png?quality=95&thumbnail=200x200&imageView" alt="">
+                    </div>
+                    <div class="so_content_describe">
+                        <span class="Tag">满赠</span>
+                        <p class="goods_title"><a href="">网易智造太空舱按摩大师椅</a></p>
+                        <p class="goods_describe">买就送网易智造月光胆机音响</p>
+                        <p class="goods_price"><span class="now_price">￥15789</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--超值组合结构-->
+    <div class="value_combination type_page">
+        <div class="so_title">
+            <a href=""><img src="images/value_combination.png" alt=""></a>
+            <button class="look_all">查看全部</button>
+        </div>
+        <div class="vc_content">
+            <ul class="clearfix">
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/47a251259e7c8068ef2abf8fa2690314.png?quality=95&thumbnail=357x357&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">网易智造减压眼部按摩仪</a></p>
+                    <p class="goods_describe">让眼睛享受全方位按摩</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/55f9c2816390b1e1c7393b971022bd1d.png?quality=95&thumbnail=357x357&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">4条装 爆款毛巾体验装</a></p>
+                    <p class="goods_describe">直降15元，爆款毛巾一次体验</p>
+                    <p class="goods_price"><span class="now_price">￥99</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/4e5398bee85880478e1959a760adbee9.png?quality=95&thumbnail=357x357&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">超轻口袋遮阳伞</a></p>
+                    <p class="goods_describe">轻松放入口袋，随身出行，高效防晒，</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/47a251259e7c8068ef2abf8fa2690314.png?quality=95&thumbnail=357x357&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">网易智造减压眼部按摩仪</a></p>
+                    <p class="goods_describe">让眼睛享受全方位按摩</p>
+                    <p class="goods_price"><span class="now_price">￥50</span><span class="before_price">￥76</span></p>
+                </li>
+                <li>
+                    <img src="https://yanxuan-item.nosdn.127.net/7ca634e395ba6430eb76d49293028860.png?quality=95&thumbnail=357x357&imageView" alt="">
+                    <span class="ap_Tag">App优惠</span>
+                    <p class="goods_title"><a href="">4条装 爆款毛巾体验装</a></p>
+                    <p class="goods_describe">直降15元，爆款毛巾一次体验</p>
+                    <p class="goods_price"><span class="now_price">￥99</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--底部结构-->
+<div class="root">
+    <div class="root1">
+        <div class="type_page clearfix">
+            <ul>
+                <li>
+                    <div class="root1_title">客户服务</div>
+                    <div class="root1_content1">
+                        <div class="clearfix">
+                            <div>
+                                <div class="online_server"></div>
+                                在线客服
+                            </div>
+                            <div>
+                                <div class="user_feedback"></div>
+                                用户反馈
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="root1_bd">
+                    <div class="root1_title">何为严选</div>
+                    <p class="root1_content2">网易原创生活类电商品牌，秉承网易一贯的严谨态度，我们深入世界各地，从源头全程严格把控商品生产环节，力求帮消费者甄选到优质的商品</p>
+                    <div class="connectus">
+                        关注我们：<span></span><span></span><span></span>
+                    </div>
+                </li>
+                <li>
+                    <div class="root1_title">扫码下载严选APP</div>
+                    <img src="images/app.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="root2">
+        <div class="type_page">
+            <ul class="root2_title clearfix">
+                <li><span></span>网易自营电商</li>
+                <li><span></span>30天无忧退换货</li>
+                <li><span></span>满88元免邮费</li>
+                <li><span></span>品质保证</li>
+            </ul>
+            <div class="root2_content">
+                <div class="root_nav">
+                    <a href="">关于我们</a>
+                    <span>|</span>
+                    <a href="">帮助中心</a>
+                    <span>|</span>
+                    <a href="">售后服务</a>
+                    <span>|</span>
+                    <a href="">配送与验收</a>
+                    <span>|</span>
+                    <a href="">商务合作</a>
+                    <span>|</span>
+                    <a href="">企业采购</a>
+                    <span>|</span>
+                    <a href="">开放平台</a>
+                    <span>|</span>
+                    <a href="">搜索推荐</a>
+                    <span>|</span>
+                    <a href="">友情链接</a>
+                    <span>|</span>
+                    <a href="">廉正举报</a>
+                </div>
+                <p class="root2_p1">食品经营许可证：JY13301080111719出版物经营许可证：新出发滨字第0132号妙得ICP证号：ICP 证浙B2-20160106浙杭食药监械经营备20171029号营业执照网易公司版权所有 © 1997-2019</p>
+                <p>（浙杭）网械企备字[2019]第00119号（粤）网械平台备字（2019）第00004号单用途商业预付卡备案证：330100AAC0024 <img src="images/jingwei.gif" alt="" width="23" height="25"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/common.js"></script>
+<script src="layui/layui.all.js"></script>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,width: '100%' //设置容器宽度
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</html>

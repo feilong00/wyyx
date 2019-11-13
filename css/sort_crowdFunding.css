@@ -1,0 +1,290 @@
+.side_bar {
+    display:none;
+}
+/*轮播图样式*/
+.banner .layui-carousel{
+    height: 420px !important;
+    overflow: hidden;
+}
+.layui-carousel img {
+    position: relative;
+    margin-left:50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.banner {
+    position: relative;
+    text-align: center;
+}
+.layui-carousel-arrow[lay-type=sub] {
+    width: 50px;
+    height: 50px;
+    background-color: #D0C4AF;
+    left: 115px !important;
+}
+.layui-carousel-arrow[lay-type=add] {
+    width: 50px;
+    height: 50px;
+    background-color: #D0C4AF;
+    right: 115px !important;
+}
+.layui-carousel-arrow[lay-type=add]:hover {
+    background-color: #B19D79;
+}
+.layui-carousel-arrow[lay-type=sub]:hover {
+    background-color: #B19D79;
+}
+/*part1开始(玩转众筹)*/
+.m-nav{
+    background: #fff;
+    height: 80px;
+    padding: 8px 0;
+    text-align: center;
+}
+.m-nav .tlt{
+    width: 2em;
+    font-size: 24px;
+    color: #B4A078;
+    line-height: 32px;
+    float: left;
+}
+.m-nav .iconList{
+    height: 60px;
+    float: right;
+}
+.m-nav .iconList li{
+    float: left;
+    height: 100%;
+    width: 264px;
+    border-left: 1px solid #eaeaea;
+    line-height: 60px;
+}
+.m-nav .iconList .icon1 span,.icon2 span{
+    margin-left: 21px;
+}
+.m-nav .iconList .icon3{
+    width: 211px;
+}
+.m-nav .iconList .icon4{
+    width: 224px;
+    padding-left: 40px;
+}
+.m-nav .iconList li span{
+    font-size: 20px;
+    margin-left: 16px;
+}
+/*part1结束(玩转众筹)*/
+/*part2开始(正在众筹，即将开始，众筹结束)*/
+.m-projects{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f4f4f4;
+}
+.m-project{
+    padding: 40px 0;
+}
+/*(正在众筹)开始*/
+.m-title{
+    position: relative;
+    width: 461px;
+    margin: 0 auto 10px;
+    height: 28px;
+    background: #f4f4f4;
+}
+.m-title .u-line{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+.m-title .u-line .cont{
+    position: absolute;
+    width: 221px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    margin: -17px 0 0 -110px;
+    font-size: 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+.m-title .u-line .cont img{
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+.m-title .u-line .cont p{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.m-itemList{
+    width: 100%;
+    overflow: hidden;
+}
+.m-item{
+    float: left;
+    margin-top: 20px;
+    width: 535px;
+    height: 220px;
+    background: #fff;
+    cursor: pointer;
+}
+.even{
+    margin-left: 20px;
+}
+.m-item .u-pic{
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+}
+.m-item .u-pic img{
+    transition: transform 1s;
+    width: 100%;
+}
+.m-item .u-pic img:hover{
+    transform: scale(1.1);
+}
+.m-item .m-info{
+    float: left;
+    padding-left: 15px;
+    width: 300px;
+}
+.m-item .m-info .u-name{
+    font-size: 20px;
+    color: #333;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.m-item .m-info .u-name:hover{
+    color: #B4A078;
+}
+.m-item .m-info .u-desc{
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 6px;
+}
+.m-item .m-info .m-progress{
+    width: 300px;
+    padding: 0;
+    position: relative;
+}
+.m-progress .m-progressBar{
+    margin-top: 38px;
+}
+.m-progress .m-progressBar .u-bar{
+    width: 220px;
+    height: 2px;
+    background-color: #F4F4F4;
+    border-radius: 2px;
+    position: relative;
+}
+.m-progress .m-progressBar .u-bar .progress{
+    height: 2px;
+    background-color: #B4A078;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.m-item .m-info .m-progress .u-percent{
+    position: absolute;
+    color: #B4A078;
+    font-size: 16px;
+    line-height: 16px;
+    top: -7px;
+    left: 226px;
+}
+.m-item .m-info .m-progress .m-detail{
+    margin-top: 37px;
+    overflow: hidden;
+}
+.m-item .m-info .m-progress .m-detail li{
+    width: 95px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #eaeaea;
+}
+.m-item .m-info .m-progress .m-detail li:first-child{
+    border-left:none;
+}
+.m-item .m-info .m-progress .m-detail li .text{
+    line-height: 1;
+    font-size: 14px;
+    color: #333;
+}
+.m-item .m-info .m-progress .m-detail li .desc{
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+    line-height: 1;
+}
+/*(正在众筹)结束*/
+/*(即将开始)开始*/
+.m-remind{
+    margin-top: 45px;
+}
+.m-remind .u-time{
+    display: inline-block;
+    width: 152px;
+    font-size: 16px;
+    color: #B4A078;
+    line-height: 16px;
+}
+.m-remind .button{
+    display: inline-block;
+    width: 128px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    text-align: center;
+    color: #b4a078;
+    border: 1px solid #b4a078;
+    background-color: #f5f3ef;
+    border-radius: 2px;
+}
+.m-remind .button:hover{
+    background-color: #fff;
+}
+/*(即将开始)结束*/
+.m-end{
+    margin-top: 62px;
+    overflow: hidden;
+}
+.m-end .u-txt{
+    float: left;
+    font-size: 18px;
+    color: #2BAB52;
+    line-height: 18px;
+}
+.m-end .u-amount{
+    float: right;
+    margin: 2px 10px 0 0;
+    font-size: 14px;
+    color: #999;
+    line-height: 14px;
+}
+.m-end .u-amount .amount{
+    margin-left: 8px;
+    color: #333;
+}
+/*(众筹结束)开始*/
+/*(众筹结束)结束*/
+/*part2结束(正在众筹，即将开始，众筹结束)*/

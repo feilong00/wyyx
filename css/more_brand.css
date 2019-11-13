@@ -1,0 +1,116 @@
+.side_bar {
+    display: none;
+}
+.brand_top_t{
+    font-size:12px;
+    color: #333333;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.brand_top_t a:hover{
+    text-decoration: underline;
+}
+.brand_top_arrow{
+    display: inline-block;
+    height: 11px;
+    width: 5px;
+    margin: 0 5px;
+    background-image: url("../images/wy-arrow1.png");
+    background-position: 0 -1093px;
+}
+.z-cur{
+    color: #999999;
+}
+.brand_top_b{
+    padding-bottom: 25px;
+    margin-bottom:30px;
+    border-bottom: 2px solid #262022;
+    text-align: center!important;
+}
+.brand_title{
+    font-size:24px;
+    font-family: "Microsoft Yahei","微软雅黑",verdana;
+    color: #333;
+}
+.subtitle{
+    font-size: 14px;
+    margin-left: 16px;
+    color: #333333;
+}
+.brand_one{
+    height:400px;
+    width: 535px;
+    margin-bottom:38px;
+    box-sizing: border-box;
+    float: left;
+}
+.brand_hd{
+    height: 240px;
+    display: block;
+}
+.brand_bd{
+    height: 160px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 16px 22px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.brand_bd_title{
+    display: inline-block;
+    position:relative;
+    font-size:22px;
+    color: #333333;
+}
+.brand_bd_title a:hover{
+    color: #BC9D68;
+}
+.brand_bd_title .new_shel{
+    position: absolute;
+    right: -36px;
+    top: -8px;
+    width: 32px;
+    height: 21px;
+    font-size: 11px;
+    color: #fff;
+    line-height: 19px;
+    text-align: center;
+    background: url("../images/newshel.png") no-repeat;
+}
+.splitLine{
+    border-bottom: 1px solid #333333;
+    width: 96px;
+    margin-top: 8px;
+    margin-bottom:14px;
+}
+.brand_bd_bottom{
+    color: #999999;
+    font-size:14px;
+    line-height:22px;
+}
+.brand_bd_link{
+    font-size:14px;
+    color: #d4282d;
+    position: absolute;
+    right: 25px;
+    bottom: 18px;
+}
+.brand_bd_link_img{
+    display: block;
+    float: right;
+    margin-top: 6px;
+    margin-left:6px;
+    background-image: url("../images/wy-arrow2.png");
+    background-position: 0 -4801px;
+    height: 7px;
+    width: 18px;
+}
+.brand_two{
+    height:400px;
+    width: 535px;
+    margin-left: 20px;
+    margin-bottom:38px;
+    box-sizing: border-box;
+    float: left;
+}
